@@ -1,0 +1,394 @@
+// var
+	// square
+@width: 1920px;
+@wrap: 970px;
+	// colors
+@text_color: #000;
+@sub_text: #32a6e0;
+// mixins
+.clear(){
+	&:before,
+	&:after{
+		content: " ";
+		display: table;
+	}
+	&:after{clear: both;}
+}
+.container(){
+	width: 100%;
+	max-width: @width;
+	height: auto;
+	margin: 0 auto;
+}
+.wrap_container(){
+	max-width: @wrap;
+	height: auto;
+	margin: 0 auto;
+}
+.font(@fz: 18px, @fw: normal){
+	font-size: @fz;
+	font-weight: @fw;
+}
+.shadow(){box-shadow: 0 2px 5px 0 fadeout(#000, 88%), 0 2px 10px 0 fadeout(#000, 88%);}
+
+// global classes
+body{font-family: 'Roboto', sans-serif;}
+.wrap{.wrap_container;}
+
+// main
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*::selection{
+	color: @text_color;
+	background: @sub_text;
+	text-shadow: 0 0 10px #000;
+}
+
+body{background-color: #E6E6E6}
+
+h2{
+	padding: 10px 0;
+	.font(26px, bold);
+}
+
+.lang{
+	width: 40px;
+	height: 25px;
+	text-align: center;
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	a{
+		color: #000;
+		text-decoration: none;
+	}
+	img{width: 40px;}
+	span{
+		font-size: 18px;
+		transition: .3s;
+	}
+	&:hover span{
+		color: @sub_text;
+		text-shadow: 0 -1px fadeout(#000, 50%), 0 0 10px fadeout(#000, 60%);
+		cursor: pointer;
+	}
+}
+
+header{
+	.container;
+	padding: 100px 0;
+	text-align: center;
+	figure{
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+		position: relative;
+		top: -80px;
+		border-radius: 50%;
+		overflow: hidden;
+		opacity: 0;
+		img{
+			width: 100px;
+			height: 100px;
+			border: 1px solid fadeout(#000, 50%);
+			border-radius: 50%;
+		}
+		figcaption{
+			color: #fff;
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			transform: translate(-50%, 0%);
+			transition: .3s;
+		}
+		&:hover figcaption{
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+		&:hover .overlay{top: 0;}
+		.overlay{
+			width: 100px;
+			height: 100px;
+			background-color: fadeout(#000, 80%);
+			border-radius: 50%;
+			position: absolute;
+			top: -100px;
+			left: 0;
+			transition: .3s;
+		}
+	}
+	h1{
+		margin: 0;
+		.font(36px, bold);
+	}
+	h2{
+		color: @sub_text;
+		.font(30px);
+	}
+}
+// header
+.about{
+	.container;
+	p{
+		padding-left: 50px;
+		.font;
+	}
+}
+// about
+.skills{
+	.container;
+	.item_container{
+		padding-left: 50px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		aling-items: center;
+		.item{
+			width: 95px;
+			height: 95px;
+			margin: 40px 20px 60px;
+			text-align: center;
+			border-radius: 10px;
+			transition: 1s;
+			opacity: 0;
+			figure{
+				margin: 0;
+				img{
+					width: 95px;
+					height: 95px;
+				}
+			}
+			p{
+				color: #aaa;
+				.font(16px);
+			}
+		}
+	}
+}
+// skills
+.works{
+	.container;
+	.item_container{
+		padding-left: 50px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		aling-items: flex-start;
+		.item{
+			width: 250px;
+			height: 250px;
+			margin: 20px;
+			padding: 0;
+			overflow: hidden;
+			position: relative;
+			opacity: 0;
+			transition: 1s;
+			.shadow;
+			a{text-decoration: none;}
+			figure{
+				margin: 0;
+				img{
+					width: 100%;
+					height: auto;
+					padding: 0;
+				}
+				figcaption{
+					width: 100%;
+					height: 100px;
+					padding: 10px 0;
+					color: #fff;
+					background-color: fadeout(#333, 20%);
+					text-align: center;
+					position: absolute;
+					bottom: -105px;
+					transition: .4s cubic-bezier(0,1.98,.65,2.16);;
+					.font(20px);
+				}
+			}
+			&:nth-last-of-type(1){flex: 0 0 45%}
+			&:nth-last-of-type(2){flex: 0 0 45%}
+			&:hover figcaption{bottom: -50px;}
+		}
+	}
+}
+// work
+.job{
+	.container;
+	.wrap{position: relative;}
+	.text_container{
+		width: 100%;
+		height: auto;
+		padding-left: 50px;
+		h2{
+			margin: 0;
+			padding: 0;
+		}
+		h3{
+			color: @sub_text;
+			.font(16px);
+		}
+		p{
+			margin-top: 10px;
+			.font(20px);
+		}
+	}
+	.date_container{
+		color: #aaa;
+		position: absolute;
+		top: 65px;
+		right: 0;
+		.font(12px);
+	}
+}
+// job
+.contacts{
+	.container;
+	.contacts_container{
+		padding-left: 50px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		.links{
+			margin-right: 50px;
+			p{
+				margin: 15px 0;
+				.font;
+				a{
+					color: @sub_text;
+					text-decoration: none;
+					transition: .3s;
+					&:hover{
+						text-shadow: 0 -1px fadeout(#000, 80%);
+					}
+				}
+			}
+		}
+		.link_to{
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: flex-start;
+			a{
+				margin: 11px 0;
+				color: @sub_text;
+				text-decoration: none;
+				.font;
+				transition: .3s;
+				&:hover{text-shadow: 0 -1px fadeout(#000, 80%);}
+			}
+		}
+	}
+	form{
+		width: 400px;
+		input, button{
+			width: 100%;
+			margin-left: 50px;
+			margin-top: 20px;
+			padding: 10px 15px;
+			color: #333;
+			background-color: #EDEDED;
+			border: 1px solid transparent;
+			transition: .3s;
+			&:active, &:focus{
+				color: #000;
+				background-color: #fff;
+				border: 1px solid fadeout(#000, 90%);
+				.shadow;
+			}
+			&:hover{color: #000;}
+		}
+		button{
+			margin-bottom: 30px;
+			color: #fff;
+			background-color: @sub_text;
+			transition: .3s;
+			&:hover{
+				color: #eee;
+				background-color: darken(@sub_text, 2%);
+				.shadow;
+			}
+			&:active{box-shadow: 0;}
+		}
+		textarea{
+			width: 100%;
+			margin-left: 50px;
+			margin-top: 30px;
+			padding: 10px 15px;
+			color: #333;
+			background-color: #EDEDED;
+			border: 1px solid transparent;
+			transition: .3s;
+			&:active, &:focus{
+				color: #000;
+				background-color: #fff;
+				border: 1px solid fadeout(#000, 90%);
+				.shadow;
+			}
+			&:hover{color: #000;}
+		}
+	}
+}
+
+@media screen and (max-width: 970px) {
+
+	h2 {padding-left: 10px;}
+
+	.about p {padding-right: 50px;}
+
+	.job .date_container {padding-right: 10px;}
+
+	.job .text_container p {padding-right: 50px;}
+
+}
+
+@media screen and (max-width: 910px) {
+
+	.skills .item_container {
+		padding-left: 0;
+		.item {
+			margin: 50px 0 0;
+			flex: 1 1 50%;
+		}
+	}
+
+	.works .item_container {
+		padding-left: 0px;
+		justify-content: space-around;
+		.item{
+			flex: 1 1 45%;
+			&:nth-last-of-type(1),
+			&:nth-last-of-type(2){flex: 1 1 45%;}
+		}
+	}
+
+}
+
+@media screen and (max-width: 460px) {
+
+	.job .date_container {display: none;}
+
+	.contacts .contacts_container .links p a {
+		width: 100%;
+		padding: 20px 0;
+		display: block;
+	}
+
+	.contacts form {
+		width: 100%;
+		input {
+			width: 100%;
+			margin-left: 0;
+		}
+		textarea {
+			width: 100%;
+			margin-left: 0;
+		}
+		button {
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+}
