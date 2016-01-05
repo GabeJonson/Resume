@@ -9,7 +9,14 @@ body {
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+*::-moz-selection {
+  color: #000000;
+  background: #32a6e0;
+  text-shadow: 0 0 10px #000;
 }
 *::selection {
   color: #000000;
@@ -20,7 +27,9 @@ body {
   background-color: #e6e6e6;
 }
 h2 {
+  margin: 40px 0;
   padding: 10px 0;
+  text-align: center;
   font-size: 26px;
   font-weight: bold;
 }
@@ -41,6 +50,7 @@ h2 {
 }
 .lang span {
   font-size: 18px;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 .lang:hover span {
@@ -65,11 +75,12 @@ header figure {
   border-radius: 50%;
   overflow: hidden;
   opacity: 0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 rgba(0, 0, 0, 0);
 }
 header figure img {
   width: 100px;
   height: 100px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 50%;
 }
 header figure figcaption {
@@ -77,11 +88,16 @@ header figure figcaption {
   position: absolute;
   top: 100%;
   left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%);
+  -webkit-transition: .3s;
   transition: .3s;
 }
 header figure:hover figcaption {
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 header figure:hover .overlay {
@@ -95,6 +111,7 @@ header figure .overlay {
   position: absolute;
   top: -100px;
   left: 0;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 header h1 {
@@ -103,6 +120,7 @@ header h1 {
   font-weight: bold;
 }
 header h2 {
+  margin: 0;
   color: #32a6e0;
   font-size: 30px;
   font-weight: normal;
@@ -114,9 +132,16 @@ header h2 {
   margin: 0 auto;
 }
 .about p {
-  padding-left: 50px;
+  margin-top: 20px;
+  word-spacing: 10px;
   font-size: 18px;
   font-weight: normal;
+}
+.about p:first-letter {
+  padding-left: 20px;
+}
+.about p:nth-of-type(1) {
+  margin-top: 0px;
 }
 .skills {
   width: 100%;
@@ -125,18 +150,26 @@ header h2 {
   margin: 0 auto;
 }
 .skills .item_container {
-  padding-left: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   aling-items: center;
 }
 .skills .item_container .item {
   width: 95px;
   height: 95px;
-  margin: 40px 20px 60px;
+  margin: 0px 20px 30px;
   text-align: center;
   border-radius: 10px;
+  -webkit-transition: 1s;
   transition: 1s;
   opacity: 0;
 }
@@ -159,9 +192,16 @@ header h2 {
   margin: 0 auto;
 }
 .works .item_container {
-  padding-left: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   aling-items: flex-start;
 }
@@ -173,7 +213,9 @@ header h2 {
   overflow: hidden;
   position: relative;
   opacity: 0;
+  -webkit-transition: 1s;
   transition: 1s;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .works .item_container .item a {
@@ -196,14 +238,21 @@ header h2 {
   text-align: center;
   position: absolute;
   bottom: -105px;
+  -webkit-transition: 0.4s cubic-bezier(0, 1.98, 0.65, 2.16);
   transition: 0.4s cubic-bezier(0, 1.98, 0.65, 2.16);
   font-size: 20px;
   font-weight: normal;
 }
 .works .item_container .item:nth-last-of-type(1) {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 45%;
+  -ms-flex: 0 0 45%;
   flex: 0 0 45%;
 }
 .works .item_container .item:nth-last-of-type(2) {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 45%;
+  -ms-flex: 0 0 45%;
   flex: 0 0 45%;
 }
 .works .item_container .item:hover figcaption {
@@ -221,16 +270,16 @@ header h2 {
 .job .text_container {
   width: 100%;
   height: auto;
-  padding-left: 50px;
 }
 .job .text_container h2 {
   margin: 0;
   padding: 0;
+  text-align: left;
+  color: #32a6e0;
 }
 .job .text_container h3 {
-  color: #32a6e0;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: bold;
 }
 .job .text_container p {
   margin-top: 10px;
@@ -240,7 +289,7 @@ header h2 {
 .job .date_container {
   color: #aaa;
   position: absolute;
-  top: 65px;
+  top: 103px;
   right: 0;
   font-size: 12px;
   font-weight: normal;
@@ -251,13 +300,8 @@ header h2 {
   height: auto;
   margin: 0 auto;
 }
-.contacts .contacts_container {
-  padding-left: 50px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-}
 .contacts .contacts_container .links {
+  margin-bottom: 20px;
   margin-right: 50px;
 }
 .contacts .contacts_container .links p {
@@ -268,14 +312,23 @@ header h2 {
 .contacts .contacts_container .links p a {
   color: #32a6e0;
   text-decoration: none;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 .contacts .contacts_container .links p a:hover {
   text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
 }
 .contacts .contacts_container .link_to {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
   flex-flow: column wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 .contacts .contacts_container .link_to a {
@@ -284,6 +337,7 @@ header h2 {
   text-decoration: none;
   font-size: 18px;
   font-weight: normal;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 .contacts .contacts_container .link_to a:hover {
@@ -291,16 +345,17 @@ header h2 {
 }
 .contacts form {
   width: 400px;
+  margin: 0 auto;
 }
 .contacts form input,
 .contacts form button {
   width: 100%;
-  margin-left: 50px;
   margin-top: 20px;
   padding: 10px 15px;
   color: #333;
   background-color: #EDEDED;
   border: 1px solid transparent;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 .contacts form input:active,
@@ -310,6 +365,7 @@ header h2 {
   color: #000;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .contacts form input:hover,
@@ -320,24 +376,27 @@ header h2 {
   margin-bottom: 30px;
   color: #fff;
   background-color: #32a6e0;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 .contacts form button:hover {
   color: #eee;
   background-color: #29a2df;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .contacts form button:active {
+  -webkit-box-shadow: 0;
   box-shadow: 0;
 }
 .contacts form textarea {
   width: 100%;
-  margin-left: 50px;
   margin-top: 30px;
   padding: 10px 15px;
   color: #333;
   background-color: #EDEDED;
   border: 1px solid transparent;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 .contacts form textarea:active,
@@ -345,6 +404,7 @@ header h2 {
   color: #000;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .contacts form textarea:hover {
@@ -370,17 +430,28 @@ header h2 {
   }
   .skills .item_container .item {
     margin: 50px 0 0;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
     flex: 1 1 50%;
   }
   .works .item_container {
     padding-left: 0px;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
   .works .item_container .item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 45%;
+    -ms-flex: 1 1 45%;
     flex: 1 1 45%;
   }
   .works .item_container .item:nth-last-of-type(1),
   .works .item_container .item:nth-last-of-type(2) {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 45%;
+    -ms-flex: 1 1 45%;
     flex: 1 1 45%;
   }
 }
@@ -409,4 +480,3 @@ header h2 {
     margin-left: 0;
   }
 }
-/*# sourceMappingURL=main.css.map */
