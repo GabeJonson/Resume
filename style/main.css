@@ -411,17 +411,27 @@ header h2 {
   color: #000;
 }
 @media screen and (max-width: 970px) {
-  h2 {
-    padding-left: 10px;
-  }
-  .about p {
+  .about p,
+  .contacts p {
+    padding-left: 50px;
     padding-right: 50px;
   }
   .job .date_container {
-    padding-right: 10px;
+    padding-right: 50px;
+  }
+  .job .text_container h2,
+  .job .text_container h3 {
+    padding-left: 50px;
   }
   .job .text_container p {
+    padding-left: 50px;
     padding-right: 50px;
+  }
+  .job .text_container p:first-letter {
+    padding-left: 20px;
+  }
+  .contacts_container .link_to {
+    padding: 0 50px;
   }
 }
 @media screen and (max-width: 910px) {
@@ -456,13 +466,29 @@ header h2 {
   }
 }
 @media screen and (max-width: 460px) {
+  .about p {
+    padding: 0 20px;
+  }
   .job .date_container {
     display: none;
+  }
+  .job .text_container h2,
+  .job .text_container h3 {
+    padding: 0 20px;
+  }
+  .job .text_container p {
+    padding: 0 20px;
+  }
+  .contacts .contacts_container .links p {
+    padding: 0 20px;
   }
   .contacts .contacts_container .links p a {
     width: 100%;
     padding: 20px 0;
     display: block;
+  }
+  .contacts .contacts_container .link_to {
+    padding: 0 20px;
   }
   .contacts form {
     width: 100%;
@@ -478,5 +504,8 @@ header h2 {
   .contacts form button {
     width: 100%;
     margin-left: 0;
+  }
+  form {
+    padding: 0 20px;
   }
 }

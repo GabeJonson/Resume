@@ -330,17 +330,30 @@ header{
 			&:hover{color: #000;}
 		}
 	}
+
 }
 
 @media screen and (max-width: 970px) {
 
-	h2 {padding-left: 10px;}
+	.about p,
+	.contacts p {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
 
-	.about p {padding-right: 50px;}
+	.job {
+		.date_container {padding-right: 50px;}
+		.text_container {
+			h2, h3 {padding-left: 50px;}
+			p {
+				padding-left: 50px;
+				padding-right: 50px;
+				&:first-letter {padding-left: 20px;}
+			}
+		}
+	}
 
-	.job .date_container {padding-right: 10px;}
-
-	.job .text_container p {padding-right: 50px;}
+	.contacts_container .link_to {padding: 0 50px;}
 
 }
 
@@ -368,12 +381,28 @@ header{
 
 @media screen and (max-width: 460px) {
 
-	.job .date_container {display: none;}
+	.about p {padding: 0 20px;}
 
-	.contacts .contacts_container .links p a {
-		width: 100%;
-		padding: 20px 0;
-		display: block;
+	.job {
+		.date_container {display: none;}
+		.text_container {
+			h2, h3 {padding: 0 20px;}
+			p {padding: 0 20px;}
+		}
+	}
+
+	.contacts {
+		.contacts_container {
+			.links p {
+				padding: 0 20px;
+				a {
+					width: 100%;
+					padding: 20px 0;
+					display: block;
+				}
+			}
+			.link_to {padding: 0 20px;}
+		}
 	}
 
 	.contacts form {
@@ -391,4 +420,6 @@ header{
 			margin-left: 0;
 		}
 	}
+
+	form {padding: 0 20px;}
 }
