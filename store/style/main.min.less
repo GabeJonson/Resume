@@ -1,0 +1,539 @@
+@mainfont: "Trebuchet MS", Helvetica, sans-serif;
+@cabin: 'Cabin', sans-serif;
+@green: #81BD3D;
+@blue: #6FC1D7;
+@darkblue: darken(#6FC1D7, 30%);
+@lightblue: lighten(#6FC1D7, 10%);
+@orange: #F29C40;
+@yellow: #EACF3E;
+@aqua: #48CAC3;
+@lime: #60CE89;
+@pop: #B9C261;
+.readButton(@p, @fz, @c, @b, @br){
+	padding: @p;
+	font-size: @fz;
+	color: @c;
+	background: @b;
+	border-radius: @br;
+}
+.heading(){
+	font-family: @cabin;
+	font-size: 40px;
+	color: #3B475F;
+	text-align: center;
+	line-height: 1;
+	span{
+		font-family: @cabin;
+		font-size: 19px;
+		color: @green;
+	}
+}
+.shadow(){box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
+
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.wrap{
+	max-width: 1920px;
+	height: auto;
+	margin: 0 auto;
+}
+html{font-family: @mainfont !important;}
+header, section, footer{
+	width: 100%;
+	height: auto;
+	.wrap();
+}
+.getApp{
+	width: 100%;
+	height: 100px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #737272;
+	text-align: center;
+	line-height: 100px;
+	display: block;
+	span{color: #383838;}
+}
+
+header{
+	width: 100%;
+	height: 800px;
+	background: url(../img/img01.jpg) 50% -400px no-repeat;
+	h1{
+		max-width: 480px;
+		min-width: 300px;
+		margin: 0px auto;
+		padding-top: 250px;
+		font-family: @cabin;
+		font-size: 150px;
+		font-weight: bold;
+		color: #FFF;
+		text-align: center;
+		line-height: 50px;
+		span{font-size: 50px;}
+	}
+	.os{
+		width: 90%;
+		height: 190px;
+		margin: 0px auto;
+		text-align: center;
+		h2{
+			font-family: @cabin;
+			font-size: 30px;
+			font-weight: 400;
+			color: #FFF;
+		}
+		.osIcons{
+			a{
+				margin: 0 10px 0 10px;
+				font-size: 50px;
+				color: #FFF;
+				.fa{transition: .3s;}
+				&:hover > .fa{
+					&-android{
+						color: @green;
+						.shadow();
+					}
+					&-apple{
+						color: silver;
+						.shadow();
+					}
+					&-windows{
+						color: @blue;
+						.shadow();
+					}
+				}
+			}
+		}
+	}
+}
+
+.howItWork{
+	margin-top: 60px;
+	h2{.heading();}
+	.workWrap{
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		.itsEasy, .inSocial{
+			width: 20%;
+			max-width: 500px;
+			height: auto;
+			margin: 20px;
+			padding: 10px;
+			flex: 1 1 auto;
+		}
+		.itsEasy{
+			order: 1;
+			h3{
+				font-size: 40px;
+				font-weight: bold;
+				color: @green;
+			}
+			p{
+				font-size: 18px;
+				color: @blue;
+			}
+		}
+		.inSocial{
+			order: 3;
+			.networks{
+				h3{
+					font-size: 25px;
+					font-weight: bold;
+					color: @darkblue;
+					line-height: 1px;
+				}
+				p{
+					font-size: 14px;
+					color: lighten(#000, 20%);
+				}
+			}
+			.mail{
+				margin-top: 50px;
+				h3{
+					font-size: 25px;
+					font-weight: bold;
+					color: @lightblue;
+					line-height: 1px;
+				}
+				p{
+					font-size: 14px;
+					color: lighten(#000, 20%);
+				}
+			}
+			.commerce{
+				margin-top: 50px;
+				h3{
+					font-size: 25px;
+					font-weight: bold;
+					color: lighten(@green, 10%);
+					line-height: 1px;
+				}
+				p{
+					font-size: 14px;
+					color: lighten(#000, 20%);
+				}
+			}
+		}
+		figure{
+			order: 2;
+			width: 40%;
+			max-width: 570px;
+			flex: 1 1 570px;
+			img{width: 100%;}
+		}
+	}
+}
+
+.advantages{
+	margin-top: 60px;
+	h2{.heading();}
+	.advantagesWrap{
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		.box{
+			width: 340px;
+			margin-top: 30px;
+			text-align: center;
+			figure{margin: 10px 0;}
+			h3{
+				font-size: 18px;
+				font-weight: bold;
+				color: #3C3B3A;
+				line-height: 20px;
+			}
+			p{
+				padding-bottom: 20px;
+				font-size: 14px;
+				color: #686868;
+			}
+			a{
+				.readButton(10px 20px, 14px, #FFF, @blue, 20px);
+				transition: .3s;
+				&:hover{
+					background: @green;
+					.shadow();
+				}
+			}
+		}
+	}
+}
+
+.info{
+	margin-top: 60px;
+	margin-bottom: 60px;
+	h2{.heading();}
+	.infoWrap{
+		width: 100%;
+		height: auto;
+		margin-top: 50px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		.infoBox{
+			width: 300px;
+			h3{
+				width: 100%;
+				height: 172px;
+				padding: 0 40px;
+				font-family: @mainfont;
+				font-size: 30px;
+				font-weight: bold;
+				color: #FFF;
+				display: flex;
+				vertical-align: center;
+				align-items: center;
+				.shadow();
+				&.orange{background: @orange !important;}
+				&.yellow{background: @yellow !important;}
+				&.green{background: @green !important;}
+				&.blue{background: @blue !important;}
+			}
+			p{
+				margin-top: 50px;
+				font-size: 14px;
+				color: #686868;
+			}
+			a{
+				.readButton(0, 16px, #000, none, 0);
+				transition: all .3s;
+				&:hover{letter-spacing: 3px;}
+			}
+		}
+	}
+}
+
+.team{
+	margin-top: 60px;
+	padding: 30px 0;
+	background: @pop;
+	h2{.heading();color: #FFF;span{color: #FFF;}}
+	.teamWrap{
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		.teamBox{
+			width: 300px;
+			margin-top: 20px;
+			text-align: center;
+			figure{margin: 0;img{border-radius: 50%;.shadow();}}
+			p.name{
+				font-size: 22px;
+				font-weight: bold;
+				color: #FFF;
+				text-transform: uppercase;
+			}
+			.socIcon{
+				width: 60%;
+				text-align: center;
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-between;
+				& .fa{
+					width: 30px;
+					height: 30px;
+					font-size: 20px;
+					color: #FFF;
+					text-align: center;
+					line-height: 30px;
+					border: 1px solid transparent;
+					transition: .3s;
+					&-facebook{&:hover{color: #3b5998;}}
+					&-twitter{&:hover{color: #3ACAFF;}}
+					&-google-plus{&:hover{color: #D64136;}}
+					&:hover{
+						border: 1px solid #FFF;
+						border-radius: 50%;
+					}
+				}
+			}
+		}
+	}
+}
+
+.latestNews{
+	padding: 30px 0;
+	h2{.heading();span{color: @green;}}
+	.latestNewsWrap{
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		.newsBox{
+			max-width: 420px;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			.date{
+				width: 70px;
+				padding: 5px;
+				font-size: 52px;
+				color: @green;
+				text-align: center;
+				text-transform: uppercase;
+				line-height: 16px;
+				align-self: center;
+				span{
+					font-size: 16px;
+				}
+			}
+			p{
+				max-width: 270px;
+				padding: 10px;
+				font-family: @mainfont;
+				font-size: 22px;
+				font-weight: 400;
+				color: #686868;
+			}
+		}
+	}
+	.button{
+		text-align: center;
+		a{
+			width: 100%;
+			text-align: center;
+			.readButton(10px 20px, 14px, #FFF, @blue, 20px);
+			transition: .3s;
+			&:hover{
+				background: @green;
+				.shadow();
+			}
+		}
+	}
+}
+
+.special{
+	height: 480px;
+	background: url(../img/parallax01.jpg) center top no-repeat;
+	h2{
+		max-width: 565px;
+		height: auto;
+		margin-left: 10%;
+		padding-top: 5%;
+		font-family: @mainfont;
+		font-size: 400%;
+		font-weight: 700;
+		color: #FFF;
+		line-height: 46px;
+		span{
+			font-size: 50%;
+			color: #B8B8B8;
+			text-transform: uppercase;
+		}
+	}
+	.specialWrap{
+		padding-left: 10%;
+		p{
+			max-width: 565px;
+			margin-top: 40px;
+			padding: 5px 5px 20px 5px;
+			font-family: @mainfont;
+			font-size: 180%;
+			font-weight: 400;
+			color: #FFF;
+		}
+		a{
+			font-family: @cabin;
+			font-weight: bold;
+			text-transform: uppercase;
+			.readButton(18px 28px 19px, 100%, #FFF, @blue, 5px);
+			transition: .3s;
+			&:hover{
+				background: @green;
+				.shadow();
+			}
+		}
+	}
+}
+
+.testimonails{
+	h2{
+		.heading();
+		line-height: 100px;
+		span{
+			font-size: 18px;
+			font-weight: bold;
+			color: #3C3B3A;
+		}
+	}
+	.testimonailsWrap{
+		p{
+			max-width: 930px;
+			margin: 20px auto;
+			padding-bottom: 20px;
+			font-family: @cabin;
+			font-size: 14px;
+			color: #686868;
+		}
+		.button{
+			width: 100%;
+			text-align: center;
+			a{
+				.readButton(9px 28px 9px 28px, 20px, #3B3B3B, none, 22px);
+				font-family: @cabin;
+				border: 1px solid #CBCBCB;
+				line-height: 24px;
+				text-align: center;
+				transition: .3s;
+				&:hover{
+					color: #FFF;
+					background: @green;
+					.shadow();
+				}
+			}
+		}
+		.os{
+			margin-top: 60px;
+			text-align: center;
+			h2{
+				font-family: @cabin;
+				font-size: 40px;
+				font-weight: 700;
+				color: #3B475F;
+			}
+			.osIcons{
+				margin-top: -20px;
+				a{
+					margin: 0 10px 0 10px;
+					font-size: 50px;
+					color: #3C3B3A;
+					.fa{transition: .3s;}
+					&:hover > .fa{
+						&-android{color: @green;}
+						&-apple{color: silver;}
+						&-windows{color: @blue;}
+					}
+				}
+			}
+		}
+	}
+}
+
+iframe{
+	width: 100%;
+	max-width: 1920px;
+	height: 400px;
+	margin-top: 40px;
+}
+
+footer{
+	max-width: 1920px;
+	height: 100px;
+	margin: 30px 0;
+	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	.getAppFooter{
+		height: auto;
+	}
+	.social{
+		height: auto;
+		padding: 10px;
+		.fa{
+			margin: 5px;
+			font-size: 20px;
+			color: #383838;
+			transition: .3s;
+			&-facebook{&:hover{color: #3B5998;}}
+			&-google-plus{&:hover{color: #DB4437;}}
+			&-rss{&:hover{color: @orange;}}
+			&-pinterest{&:hover{color: #CB2026;}}
+			&-linkedin{&:hover{color: #0077B5;}}
+		}
+	}
+	.mail{
+		margin: 0;
+		a{
+			color: #383838;
+			transition: .3s;
+			&:hover{color: @blue;}
+		}
+	}
+}
+
+
+.stairWayToHeaven{
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	right: -20px;
+	bottom: -20px;
+	z-index: 1000;
+	a{
+		.fa{
+			font-size: 50px;
+			color: @orange;
+			&:hover{color: @lime;}
+		}
+	}
+}
+
+.hidden{opacity: 0;}
+.visible{opacity: 1;}

@@ -1,0 +1,387 @@
+/* font-family: "SegoeUIRegular"; */
+@font-face {
+    font-family: "SegoeUIRegular";
+    src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
+    src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
+    url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "SegoeUIBold"; */
+@font-face {
+    font-family: "SegoeUIBold";
+    src: url("../fonts/SegoeUIBold/SegoeUIBold.eot");
+    src: url("../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"),
+    url("../fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "SegoeUIItalic"; */
+@font-face {
+    font-family: "SegoeUIItalic";
+    src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot");
+    src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"),
+    url("../fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "SegoeUILight"; */
+@font-face {
+    font-family: "SegoeUILight";
+    src: url("../fonts/SegoeUILight/SegoeUILight.eot");
+    src: url("../fonts/SegoeUILight/SegoeUILight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SegoeUILight/SegoeUILight.woff") format("woff"),
+    url("../fonts/SegoeUILight/SegoeUILight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "SegoeUISemiBold"; */
+@font-face {
+    font-family: "SegoeUISemiBold";
+    src: url("../fonts/SegoeUISemiBold/SegoeUISemiBold.eot");
+    src: url("../fonts/SegoeUISemiBold/SegoeUISemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SegoeUISemiBold/SegoeUISemiBold.woff") format("woff"),
+    url("../fonts/SegoeUISemiBold/SegoeUISemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+.b(){border: 1px solid red;}
+@red: #DC5A54;
+@men: #373737;
+@bl: #68C5B1;
+.cl(){
+    &:after,
+    &:before{
+        clear: both;
+        content: "";
+        display: table;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 75px;
+    .top{
+        width: 100%;
+        margin: 0 auto;
+        border-bottom: 1px solid fadeout(#000, 50%);
+        .cl;
+    }
+    .social,
+    .links{
+        width: 50%;
+        min-width: 320px;
+        height: 60px;
+        margin: 0 auto;
+        float: left;
+    }
+    a{text-decoration: none;}
+    .social a .fa{
+        margin-left: 5px;
+        padding: 15px 0;
+        font-size: 25px;
+        color: @red;
+        text-align: left;
+        text-decoration: none;
+        transition: .3s;
+        &:hover{color: lighten(@red, 10%);}
+    }
+    .links{
+        padding: 15px 0;
+        text-align: right;
+        a{
+            margin: 10px;
+            padding: 22px 0;
+            font: 13px SegoeUILight;
+            color: #444;
+            text-decoration: none;
+            transition: .3s;
+            &:hover{
+                color: lighten(#444, 10%);
+                border-bottom: 4px solid @red;
+            }
+        }
+    }
+    .logo{
+        color: #000;
+        text-decoration: none;
+        h1{
+            height: 120px;
+            font: 40px SegoeUISemiBold;
+        }
+    }
+    .mainNav{
+        width: 100%;
+        height: 60px;
+        background: @men;
+        li{
+            list-style: none;
+            display: inline-block;
+            line-height: 60px;
+            position: relative;
+            a{
+                padding: 17px;
+                font: 18px SegoeUIRegular;
+                color: #fff;
+                text-decoration: none;
+                transition: .3s;
+                &:hover{background: @red;}
+                &.home{margin-left: 20px;padding: 0 !important;}
+                .fa-home{
+                    margin-left: -20px;
+                    padding: 20px !important;
+                    font-size: 20px;
+                    color: #fff;
+                    background: @bl;
+                    transition: .3s;
+                    &:hover{background: @red;}
+                }
+            }
+            .subNav{
+                height: 307px;
+                background: @men;
+                display: none;
+                position: absolute;
+                top: 58px;
+                li{
+                    width: 100%;
+                    border-bottom: 1px solid fadeout(#eee, 20%);
+                    a{
+                        margin: 0;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+// header
+.wrap{
+    width: 1200px;
+    margin: 30px auto;
+    .cl;
+}
+.main{
+    width: 790px;
+    min-height: 300px;
+    float: left;
+    .cl;
+    h3{
+        width: 100%;
+        height: 46px;
+        background: #F0F0F0;
+        border-right: 8px solid @bl;
+        overflow: hidden;
+        .fa{
+            padding: 10px;
+            font-size: 28px;
+            color: #fff;
+            background: @red;
+        }
+        span{
+            padding: 10px;
+            font: 22px SegoeUIRegular;
+            color: #fff;
+            background: @bl;
+        }
+    }
+    .last{
+        margin-top: 20px;
+        figure img{width: 100%;}
+        h4 a{
+            font: 30px SegoeUIRegular;
+            color: #000;
+            text-decoration: none;
+            transition: .3s;
+            &:hover{color: @bl;}
+        }
+        .mark{
+            width: 100%;
+            margin: 10px;
+            p{
+                display: inline;
+                font: 13px SegoeUIRegular;
+                color: #999;
+            }
+            a{
+                font: 13px SegoeUIRegular;
+                color: #999;
+                text-decoration: none;
+                transtion: .3s;
+                &:hover{color: @bl;}
+            }
+        }
+        p{
+            padding-bottom: 35px;
+            font: 15px SegoeUIRegular;
+            color: #333;
+        }
+        .next{
+            padding: 15px;
+            font: 15px SegoeUISemiBold;
+            color: #fff;
+            background: @red;
+            text-decoration: none;
+            transition: .3s;
+            &:hover{background: @bl;}
+        }
+    }
+    .posts{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        .cl;
+        .lastPosts{
+            width: 46%;
+            margin-top: 30px;
+            float: left;
+            &:nth-of-type(2n){margin-left: 60px;}
+            h4{font-size: 23px;}
+        }
+    }
+}
+// main
+aside{
+    width: 370px;
+    min-height: 300px;
+    float: right;
+    .cl;
+    form{
+        max-width: 370px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #F0F0F0;
+        input{
+            width: 87%;
+            padding: 10px;
+            font: 18px SegoeUIRegular;
+            color: #444;
+            background: #F0F0F0;
+            float: left;
+            outline: none;
+            border: 0;
+        }
+        .fa-search{
+            padding: 15px;
+            color: #fff;
+            background: @red;
+        }
+    }
+    .content{
+        padding-bottom: 20px;
+        border-bottom: 1px solid #F0F0F0;
+        h2{
+            padding: 5px 0 0 20px;
+            font: 21px SegoeUIRegular;
+            color: #777;
+        }
+        article{margin-top: 20px;}
+        figure img{margin-right: 10px;float: left;}
+        a{
+            font: 14px SegoeUIRegular;
+            color: #444;
+            text-decoration: none;
+            transition: .3s;
+            &:hover{color: @bl;}
+        }
+        .mark{
+            p{
+                display: inline;
+                font: 13px SegoeUIRegular;
+                color: #999;
+            }
+            a{
+                font: 13px SegoeUIRegular;
+                color: #999;
+                text-decoration: none;
+                transtion: .3s;
+                &:hover{color: @bl;}
+            }
+        }
+    }
+}
+// aside
+footer{
+    max-width: 1500px;
+    margin: 0 auto;
+    background: #353535;
+    .cl;
+    .wrap{margin: 0 auto;}
+    .footer{
+        width: 240px;
+        margin-left: 40px;
+        float: left;
+        border-top: 4px solid @bl;
+        transition: .3s;
+        .cl;
+        &:nth-of-type(1){margin-left: 0;}
+        &:hover{border-top: 4px solid @red;}
+        h2{
+            padding: 10px;
+            font: 18px SegoeUIBold;
+            color: #fff;
+        }
+        ul li{
+            list-style: none;
+            margin: 15px;
+            a{
+                padding: 10px;
+                font: 16px SegoeUILight;
+                color: #ccc;
+                text-decoration: none;
+                transition: .3s;
+                &:hover{color: darken(#ccc, 20%);}
+            }
+        }
+
+    }
+    .fullFooter{
+        width: 100%;
+        margin-top: 20px;
+        background: #2A2A2A;
+        .cl;
+        .social,
+        .links{
+            width: 50%;
+            min-width: 320px;
+            height: 60px;
+            margin: 0 auto;
+            float: left;
+        }
+        a{text-decoration: none;}
+        .social a .fa{
+            margin-left: 5px;
+            padding: 15px 0;
+            font-size: 25px;
+            color: @red;
+            text-align: left;
+            transition: .3s;
+            &:hover{color: lighten(@red, 10%);}
+        }
+        .links{
+            padding: 15px 0;
+            text-align: right;
+            a{
+                margin: 10px;
+                padding: 22px 0;
+                font: 13px SegoeUILight;
+                color: #444;
+                text-decoration: none;
+                transition: .3s;
+                &:hover{
+                    color: lighten(#444, 10%);
+                    border-bottom: 4px solid @red;
+                }
+            }
+        }
+    }
+}
+//footer

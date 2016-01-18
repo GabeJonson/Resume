@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<link rel="stylesheet" href="../style/main.min.css" />
+	<!-- <link rel="stylesheet" href="" />
+	-->
+	<!-- RESET CSS -->
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+	<!-- FONT AWEESOME -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+	<!-- PREFIX FREE -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<!-- JQUERY -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+	<!-- HTML5 IE9 -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- CSS3 IE9 -->
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<title>Bookler</title>
+	<script>
+		$(document).ready(function(){
+			$('a[href*=#]').bind("click", function(e){
+			var anchor = $(this);
+			$('html, body').stop().animate({
+			   scrollTop: $(anchor.attr('href')).offset().top
+			}, 900);
+			e.preventDefault();
+   		});
+   return false;
+});
+	</script>
+</head>
+<body>
+	<main>
+		<header>
+			<div id="top">
+				<figure>
+					<a href="index.html">
+						<img src="../img/logo.png" alt="Logo"></a>
+				</figure>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="../index.html">home</a>
+					</li>
+					<li>
+						<a href="soon.html">coming soon</a>
+					</li>
+					<li>
+						<a href="sellers.html">top sellers</a>
+					</li>
+					<li>
+						<a href="authors.html">authors</a>
+					</li>
+					<li>
+						<a href="about.html">about</a>
+					</li>
+					<li>
+						<a href="contacts.html" class="active">contacts</a>
+					</li>
+				</ul>
+			</nav>
+			<div id="clear"></div>
+		</header>
+		<section id="contact">
+			<h2>HOW TO FIND US</h2>
+			<div class="block">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3025.947377687381!2d-73.9846361!3d40.6751284!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b0027b8a3e7%3A0xbfc8969b22599b24!2s1st+St%2C+Brooklyn%2C+NY!5e0!3m2!1sru!2s!4v1411996221319" width="100%" height="600" frameborder="0" style="border:0"></iframe>
+				<p>Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+			</div>
+			<div class="cont">
+				<div class="box place">
+					<i class="fa fa-home"></i>
+					<p>The Company Name Inc. <br> 8901 Marmora Road, <br> Glasgow, D04 89GR.</p>
+				</div>
+				<div class="box phone">
+					<i class="fa fa-phone"></i>
+					<p>Freephone:+1 888 888 8888 <br> Telephone:+1 888 888 8888 <br> FAX:+1 888 888 8888</p>
+				</div>
+				<div class="box mail">
+					<i class="fa fa-envelope"></i>
+					<p>E-mail: mail@mail.org</p>
+				</div>
+			</div>
+		</section>
+		<div id="clear"></div>
+		<footer>
+			<p class="privat">
+				Designer © 2014 |
+				<a href="#">Privacy policy</a>
+			</p>
+		</footer>
+	</main>
+	<a href="#top"> <i class="fa fa-arrow-up"></i>
+	</a>
+</body>
+</html>

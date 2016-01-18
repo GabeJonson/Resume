@@ -1,0 +1,555 @@
+.wrap {
+  max-width: 1170px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clear {
+  clear: both;
+}
+header .headerWrap a {
+  margin: 0;
+  height: 100px;
+  float: left;
+  text-decoration: none;
+}
+header .headerWrap a h1 {
+  line-height: 50px;
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  color: #49cbcd;
+  transition: .3s;
+}
+header .headerWrap a h1:hover {
+  color: #31b0b2;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+}
+header .headerWrap nav {
+  float: right;
+}
+header .headerWrap nav ul {
+  list-style: none;
+}
+header .headerWrap nav ul li {
+  display: inline-block;
+}
+header .headerWrap nav ul li a {
+  padding: 0 10px;
+  font-family: "Open Sans";
+  font-size: 15px;
+  color: #333;
+  text-decoration: none;
+  line-height: 100px;
+  transition: .3s;
+}
+header .headerWrap nav ul li a:hover {
+  color: #49cbcd;
+  background: #fafafa;
+  border-bottom: 2px solid #49cbcd;
+}
+header.sticky {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #FFF;
+  z-index: 1;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.banner {
+  height: 566px;
+}
+.banner .bannerWrap {
+  max-width: 680px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner .bannerWrap h2 {
+  padding-top: 140px;
+  font-family: "Open Sans";
+  font-size: 63px;
+  color: #FFF;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.1);
+}
+.banner .bannerWrap p {
+  max-width: 380px;
+  height: auto;
+  margin: 40px auto;
+  font-family: "Open Sans";
+  font-size: 23px;
+  color: #FFF;
+}
+.banner .bannerWrap a {
+  padding: 10px 30px;
+  font-family: "Open Sans";
+  font-size: 26px;
+  color: #FFF;
+  text-decoration: none;
+  border: 3px solid #FFF;
+  border-radius: 5px;
+  transition: .3s;
+}
+.banner .bannerWrap a:hover {
+  color: #49cbcd;
+  border: 3px solid #49cbcd;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+.service {
+  height: auto;
+}
+.service .serviceWrap {
+  padding: 110px 0;
+}
+.service .serviceWrap .serviceCount {
+  display: inline-block;
+  width: 270px;
+  height: 330px;
+  margin: 0px 5px;
+  padding: 0px 10px;
+  text-align: center;
+}
+.service .serviceWrap .serviceCount .fa {
+  border: 1px solid red;
+  width: 105px;
+  height: 105px;
+  margin: 10px 0;
+  padding: 20px;
+  color: #49cbcd;
+  border: 3px solid #49cbcd;
+  border-radius: 50%;
+}
+.service .serviceWrap .serviceCount .fa-desktop {
+  line-height: 65px;
+}
+.service .serviceWrap .serviceCount h2 {
+  margin: 50px 0 0;
+  font-family: "Open Sans";
+  font-size: 22px;
+  color: #4e525d;
+}
+.service .serviceWrap .serviceCount p {
+  margin: 10px 0;
+  padding-bottom: 20px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #4e525d;
+}
+.service .serviceWrap .serviceCount a {
+  margin: 20px 0 0;
+  padding: 10px 20px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #FFF;
+  background: #49cbcd;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: .3s;
+}
+.service .serviceWrap .serviceCount a:hover {
+  background: #31b0b2;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+}
+.folio {
+  background: #F1F1F1;
+}
+.folio .folioWrap {
+  padding: 0 0 110px 0;
+  text-align: center;
+}
+.folio .folioWrap h2 {
+  font-family: "Open Sans";
+  font-size: 42px;
+  font-weight: lighter;
+  color: #4e525d;
+  text-align: center;
+  line-height: 150px;
+}
+.folio .folioWrap figure {
+  margin: 15px;
+  padding: 0;
+  display: inline-block;
+}
+.folio .folioWrap figure img {
+  border-radius: 10px;
+}
+.folio .folioWrap a {
+  padding: 10px 20px;
+  font-family: "Open Sans";
+  font-size: 24px;
+  color: #FFF;
+  background: #49cbcd;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: .3s;
+}
+.folio .folioWrap a:hover {
+  background: #31b0b2;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+}
+.team {
+  padding: 110px 0;
+}
+.team .teamWrap h2 {
+  font-family: "Open Sans";
+  font-size: 42px;
+  font-weight: lighter;
+  color: #4e525d;
+  text-align: center;
+}
+.team .teamWrap .teamBox {
+  width: 270px;
+  height: auto;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+.team .teamWrap .teamBox figure {
+  margin: 130px 0 70px;
+  padding: 0;
+}
+.team .teamWrap .teamBox figure img {
+  border-radius: 50%;
+}
+.team .teamWrap .teamBox h2 {
+  font-family: "Open Sans";
+  font-size: 22px;
+  color: #4e525d;
+}
+.team .teamWrap .teamBox h2 .position {
+  font-size: 14px;
+  color: #656a79;
+}
+.team .teamWrap .teamBox p {
+  padding: 10px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #4e525d;
+}
+.plans {
+  background: #f1f1f1;
+}
+.plans .plansWrap {
+  padding: 120px 0px 100px 0px;
+}
+.plans .plansWrap .basic,
+.plans .plansWrap .pro,
+.plans .plansWrap .premium {
+  width: 370px;
+  height: auto;
+  margin: 0px 5px;
+  display: inline-block;
+}
+.plans .plansWrap .basic h3,
+.plans .plansWrap .pro h3,
+.plans .plansWrap .premium h3 {
+  width: 100%;
+  padding: 20px 0;
+  font-family: "Open Sans";
+  font-size: 26px;
+  font-weight: lighter;
+  color: #FFF;
+  background: #4e525d;
+}
+.plans .plansWrap .basic h4,
+.plans .plansWrap .pro h4,
+.plans .plansWrap .premium h4 {
+  padding: 20px 0;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: lighter;
+  color: #4e525d;
+  background: #f8f9fb;
+}
+.plans .plansWrap .basic p,
+.plans .plansWrap .pro p,
+.plans .plansWrap .premium p {
+  padding: 15px 0;
+  font-family: "Open Sans";
+  font-size: 14px;
+  border-bottom: 1px solid #d1d3d9;
+}
+.plans .plansWrap .basic p:last-child,
+.plans .plansWrap .pro p:last-child,
+.plans .plansWrap .premium p:last-child {
+  padding: 40px 0;
+  background: #f8f9fb;
+}
+.plans .plansWrap .basic p:last-child a,
+.plans .plansWrap .pro p:last-child a,
+.plans .plansWrap .premium p:last-child a {
+  padding: 10px 50px;
+  font-family: "Open Sans";
+  font-size: 17px;
+  color: #FFF;
+  background: #4e525d;
+  text-decoration: none;
+  transition: .3s;
+}
+.plans .plansWrap .basic p:last-child a:hover,
+.plans .plansWrap .pro p:last-child a:hover,
+.plans .plansWrap .premium p:last-child a:hover {
+  background: #656a79;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+}
+.plans .plansWrap .pro h3 {
+  background: #49cbcd;
+}
+.plans .plansWrap .pro p:last-child a {
+  background: #49cbcd;
+}
+.plans .plansWrap .pro p:last-child a:hover {
+  background: #31b0b2;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+.testimonial {
+  height: auto;
+  padding: 100px 0px 80px 0;
+  text-align: center;
+}
+.testimonial h2 {
+  font-family: "Open Sans";
+  font-size: 42px;
+  font-weight: 200;
+  color: #4e525d;
+}
+.testimonial .testimonialWrap .item p {
+  padding: 20px 0;
+  font-family: "Open Sans";
+  font-size: 17px;
+  color: #4e525d;
+}
+.testimonial .testimonialWrap .item strong {
+  margin: 20px 0;
+}
+footer {
+  height: auto;
+  padding: 100px 0px;
+  color: #FFF;
+}
+footer .footerWrap {
+  padding: 100px 0;
+}
+footer .footerWrap h2 {
+  padding-bottom: 115px;
+  font-family: "Open Sans";
+  font-size: 42px;
+  font-weight: 200;
+}
+footer .footerWrap .content {
+  max-width: 500px;
+  display: inline-block;
+}
+footer .footerWrap .content h3 {
+  font-family: "Open Sans";
+  font-size: 24px;
+  text-align: left;
+}
+footer .footerWrap .content p {
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #AAA;
+  text-align: left;
+}
+footer .footerWrap .content .social {
+  padding: 40px 0px 20px;
+  text-align: left;
+}
+footer .footerWrap .content .social a .fa {
+  width: 43px;
+  height: 43px;
+  color: #FFF;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 50%;
+  transition: .3s;
+}
+footer .footerWrap .content .social a .fa-facebook {
+  background: #3b5997;
+}
+footer .footerWrap .content .social a .fa-facebook:hover {
+  background: #2d4372;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+footer .footerWrap .content .social a .fa-twitter {
+  margin-left: 15px;
+  background: #3ec2f3;
+}
+footer .footerWrap .content .social a .fa-twitter:hover {
+  background: #0fb2ef;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+footer .footerWrap .content .social a .fa-google-plus {
+  margin-left: 15px;
+  background: #e44c41;
+}
+footer .footerWrap .content .social a .fa-google-plus:hover {
+  background: #d42a1e;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+footer .footerWrap form {
+  max-width: 570px;
+  display: inline-block;
+}
+footer .footerWrap form input[name="Name"],
+footer .footerWrap form input[name="Mail"] {
+  width: 270px;
+  height: 45px;
+  padding: 10px 15px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #8e8e8e;
+  outline: none;
+}
+footer .footerWrap form input[name="Name"]:focus,
+footer .footerWrap form input[name="Mail"]:focus {
+  color: #000;
+}
+footer .footerWrap form input[name="Name"] {
+  margin: 0 25px 25px 0;
+}
+footer .footerWrap form textarea {
+  width: 100%;
+  height: 180px;
+  padding: 10px 15px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #8e8e8e;
+}
+footer .footerWrap form textarea:focus {
+  color: #000;
+}
+footer .footerWrap form input[type="submit"] {
+  margin: 30px 0;
+  padding: 10px 25px;
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-weight: 200;
+  background: #49cbcd;
+  float: right;
+  border: 0;
+  outline: none;
+  transition: .3s;
+}
+footer .footerWrap form input[type="submit"]:hover {
+  background: #31b0b2;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+.stairwayToHeaven {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+.stairwayToHeaven a {
+  padding: 20px;
+  color: #49cbcd;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: .3s;
+}
+.stairwayToHeaven a:hover {
+  color: #FFF;
+  background: #49cbcd;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 510px) {
+  header .headerWrap a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  header .headerWrap nav {
+    display: none;
+  }
+  .folio .folioWrap figure {
+    max-width: 320px;
+  }
+  .folio .folioWrap figure img {
+    width: 100%;
+  }
+  .testimonial {
+    height: 384px;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .banner .bannerWrap h2 {
+    font-size: 40px;
+  }
+  .service .serviceWrap .serviceCount {
+    margin-top: 50px;
+  }
+  .folio .folioWrap a {
+    width: 205px;
+    margin: 20px auto;
+    display: block;
+  }
+  .testimonial {
+    padding: 50px 0px 10px 0;
+  }
+  .testimonial .testimonialWrap .item p {
+    padding: 10px;
+  }
+  footer {
+    padding: 20px 0;
+  }
+  footer .footerWrap h2 {
+    padding: 20px 0;
+  }
+  footer .footerWrap .content {
+    padding-bottom: 10px;
+  }
+  footer .footerWrap form {
+    width: 100%;
+  }
+  footer .footerWrap form input[name="Name"],
+  footer .footerWrap form input[name="Mail"] {
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+  }
+  footer .footerWrap form textarea {
+    width: 100%;
+    height: 70px;
+  }
+  footer .footerWrap form input[type="submit"] {
+    display: block;
+    float: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .service .serviceWrap {
+    padding: 50px 0;
+  }
+  .service .serviceWrap .serviceCount {
+    margin-top: 30px;
+  }
+  .team {
+    padding: 10px 0;
+  }
+  .team .teamWrap .teamBox {
+    padding: 20px 0;
+  }
+  .team .teamWrap .teamBox figure {
+    margin: 10px 0 5px;
+  }
+  .plans .plansWrap .basic {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .plans .plansWrap .pro,
+  .plans .plansWrap .premium {
+    width: 80%;
+    margin: 20px auto;
+  }
+}

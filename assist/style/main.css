@@ -1,0 +1,1342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+header {
+  max-width: 1920px;
+  height: 62px;
+  margin: 0 auto;
+  background: #0099ff;
+}
+header .headerWrap {
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+header .headerWrap figure {
+  width: 62px;
+  height: 62px;
+  margin: 0;
+  padding: 20px 0;
+  background-position: center;
+  text-align: center;
+}
+header .headerWrap figure img {
+  width: 35px;
+  height: 38px;
+  margin-top: -5px;
+}
+header .headerWrap .menu {
+  display: none;
+}
+header .headerWrap .desktopNav {
+  position: absolute;
+  left: 65px;
+  transition: .3s;
+}
+header .headerWrap .desktopNav a {
+  margin: 0;
+  padding: 22px 10px;
+  font: 300 16px 'Roboto Condensed', sans-serif;
+  color: #fff;
+  line-height: 62px;
+  text-decoration: none;
+  transition: .3s;
+}
+header .headerWrap .desktopNav a:hover {
+  color: #123c53;
+  background: #e4e4e4;
+}
+header .headerWrap .mobileNav {
+  display: none;
+}
+header .headerWrap .openLang {
+  position: absolute;
+  top: 15px;
+  right: 45px;
+}
+header .headerWrap .openLang span {
+  font: 14px 'Roboto Condensed', sans-serif;
+  color: #5ebcfb;
+  transition: .3s;
+}
+header .headerWrap .openLang span:hover {
+  color: #fff;
+  cursor: pointer;
+}
+header .headerWrap .openLang .fa-angle-down {
+  padding-left: 3px;
+  margin-top: -5px;
+  margin-bottom: 4px;
+  color: #5ebcfb;
+  transition: .3s;
+}
+header .headerWrap .openLang .fa-angle-down:hover {
+  color: #fff;
+  cursor: pointer;
+}
+header .headerWrap .openLang .lang {
+  min-width: 310px;
+  min-height: 50px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  position: absolute;
+  right: -45px;
+  z-index: 3;
+}
+header .headerWrap .openLang .lang li {
+  width: 50px;
+  list-style: none;
+  line-height: 62px;
+  text-align: center;
+  float: left;
+}
+header .headerWrap .openLang .lang li a {
+  margin: 0;
+  padding: 5px;
+  font: bold 14px 'Roboto Condensed', sans-serif;
+  color: #5ebcfb;
+  text-decoration: none;
+  transition: .3s;
+}
+header .headerWrap .openLang .lang li a:hover {
+  color: #fff;
+}
+header .headerWrap .login {
+  width: 210px;
+  height: 50px;
+  line-height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 5px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 62px;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+header .headerWrap .login li {
+  margin-left: 10px;
+  list-style: none;
+}
+header .headerWrap .login li a {
+  margin-left: 5px;
+  font: 14px 'Roboto Condensed', sans-serif;
+  color: #000;
+  text-decoration: none;
+  transition: .3s;
+}
+header .headerWrap .login li a:hover {
+  color: #0099ff;
+}
+.slider {
+  max-width: 1920px;
+  min-height: 592px;
+  margin: 0 auto;
+  box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+.slider .slide {
+  max-width: 980px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.slider .slide .left {
+  max-width: 550px;
+  margin-top: 65px;
+}
+.slider .slide .left figure {
+  margin: 33px 0;
+  display: none;
+}
+.slider .slide .left figure img {
+  width: 60px;
+}
+.slider .slide .left article {
+  max-width: 500px;
+  margin-left: 15px;
+}
+.slider .slide .left article h1 {
+  margin-left: -17px;
+  font: bold 36px 'Roboto Condensed', sans-serif;
+  color: #000;
+}
+.slider .slide .left article p {
+  font: 18px 'Roboto Condensed', sans-serif;
+  padding: 0 43px 40px;
+  line-height: 1.5;
+}
+.slider .slide .left a {
+  margin: 10px 59px;
+  padding: 20px 30px;
+  font: bold 20px 'Roboto Condensed', sans-serif;
+  color: #fff;
+  background: rgba(51, 133, 66, 0.7);
+  border: 1px solid rgba(37, 96, 48, 0.5);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: .3s;
+}
+.slider .slide .left a:hover,
+.slider .slide .left a:active {
+  background: #338542;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.slider .slide .right {
+  min-width: 400px;
+  margin-top: 34px;
+  position: relative;
+  z-index: -1;
+}
+.slider .slide .right:before,
+.slider .slide .right:after {
+  content: " ";
+  display: table;
+}
+.slider .slide .right:after {
+  clear: both;
+}
+.slider .slide .right img {
+  width: 100%;
+  position: absolute;
+  bottom: -50px;
+  right: 0px;
+  z-index: 11;
+}
+.slider .slide .right .figureWrap {
+  width: 182px;
+  height: 330px;
+  position: absolute;
+  top: 130px;
+  left: 60px;
+  background: #09f;
+  overflow: hidden;
+}
+.slider .slide .right .figureWrap .finger {
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(ellipse at center, #7a7a7a 0%, #7a7a7a 19%, #4c4c4c 39%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 137px;
+  right: 15px;
+  opacity: 0;
+}
+.slider .slide .right .figureWrap .figBg {
+  height: 401px;
+  margin: 0;
+  position: relative;
+  top: -466px;
+}
+.slider .slide .right .figureWrap .figBg .tiles {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 8px 5px;
+  position: relative;
+}
+.slider .slide .right .figureWrap .figBg .tiles img {
+  height: auto;
+  margin-top: -5px;
+  position: static;
+}
+.slider .slide .right .figureWrap .figBg .tiles img:nth-child(2n+1) {
+  margin-top: 10px;
+}
+.slider .slide .right .figureWrap .figBg .tiles img.water_check {
+  width: 94.5%;
+  position: absolute;
+  top: 250px;
+  left: 5px;
+  z-index: 9;
+  opacity: 0;
+}
+.slider .slide .right .figureWrap .figBg .tiles img.master_check {
+  width: 94.5%;
+  position: absolute;
+  top: 70px;
+  left: 5px;
+  z-index: 9;
+  opacity: 0;
+}
+.slider .slide .right a {
+  padding: 10px 15px;
+  font: 24px 'Roboto Condensed', sans-serif;
+  color: #fff;
+  background: rgba(53, 134, 68, 0.8);
+  text-decoration: none;
+  line-height: 14px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 100px;
+  left: 200px;
+  transition: .3s;
+}
+.slider .slide .right a span {
+  font: 12px 'Roboto Condensed', sans-serif;
+}
+.slider .slide .right a:hover {
+  background: #358644;
+}
+.slider .slide .right a img[src="img/download.png"] {
+  padding: 11.1px;
+  background: #358644;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: absolute;
+  bottom: 0px;
+  left: 262px;
+}
+.assist {
+  max-width: 1920px;
+  height: auto;
+  margin: 0 auto;
+}
+.assist .assistWrap {
+  max-width: 980px;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.assist .assistWrap h2 {
+  margin: 0px 15px 0 15px;
+  padding: 40px 0 0 0;
+  font: 400 36px 'Roboto Condensed', sans-serif;
+  color: #fff;
+}
+.assist .assistWrap p {
+  max-width: 680px;
+  height: auto;
+  margin: 30px 0 0 65px;
+  padding: 0 10px;
+  font: 18px 'Roboto Condensed', sans-serif;
+  color: #fff;
+}
+.assist .assistWrap p:last-child {
+  margin-bottom: 30px;
+}
+.assist .assistOffice {
+  width: 100%;
+  background: url(../img/assist_01.jpg) no-repeat fixed;
+  background-size: cover;
+  background-position: 0% 0%;
+}
+.assist .assistHome {
+  width: 100%;
+  height: 798px;
+  background: url(../img/assist_02.jpg) no-repeat fixed;
+  background-size: cover;
+  background-position: 0% 0%;
+}
+.forCompanys {
+  max-width: 1920px;
+  height: auto;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+}
+.forCompanys .forCustomer,
+.forCompanys .forWorkers,
+.forCompanys .forBusenessCenters {
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+.forCompanys .forCustomer .wrap,
+.forCompanys .forWorkers .wrap,
+.forCompanys .forBusenessCenters .wrap {
+  max-width: 980px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+.forCompanys .forCustomer article,
+.forCompanys .forWorkers article,
+.forCompanys .forBusenessCenters article {
+  min-width: 280px;
+  max-width: 490px;
+}
+.forCompanys .forCustomer article h2,
+.forCompanys .forWorkers article h2,
+.forCompanys .forBusenessCenters article h2 {
+  padding: 20px 0;
+  font: bold 30px 'Roboto Condensed', sans-serif, sans-serif;
+  color: #000000;
+}
+.forCompanys .forCustomer article p,
+.forCompanys .forWorkers article p,
+.forCompanys .forBusenessCenters article p {
+  padding-bottom: 10px;
+  line-height: 25px !important;
+  font: normal 20px 'Roboto Condensed', sans-serif, sans-serif;
+  color: #000000;
+}
+.forCompanys .forCustomer article ul,
+.forCompanys .forWorkers article ul,
+.forCompanys .forBusenessCenters article ul {
+  max-width: 600px;
+}
+.forCompanys .forCustomer article ul h2,
+.forCompanys .forWorkers article ul h2,
+.forCompanys .forBusenessCenters article ul h2 {
+  padding: 30px 0;
+}
+.forCompanys .forCustomer article ul li,
+.forCompanys .forWorkers article ul li,
+.forCompanys .forBusenessCenters article ul li {
+  padding-bottom: 10px;
+  text-align: left;
+  list-style: none;
+  font: normal 20px 'Roboto Condensed', sans-serif, sans-serif;
+  color: #000000;
+}
+.forCompanys .forCustomer:before,
+.forCompanys .forCustomer:after {
+  content: " ";
+  display: table;
+}
+.forCompanys .forCustomer:after {
+  clear: both;
+}
+.forCompanys .forCustomer .float_left {
+  float: left;
+}
+.forCompanys .forCustomer figure {
+  width: 385px;
+  height: 600px;
+  margin: 20px 0 0;
+  padding: 0;
+  float: right;
+  position: relative;
+  z-index: 0;
+}
+.forCompanys .forCustomer figure img {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+}
+.forCompanys .forCustomer .dicoverPrice {
+  width: 100%;
+  height: auto;
+}
+.forCompanys .forCustomer .dicoverPrice:before,
+.forCompanys .forCustomer .dicoverPrice:after {
+  content: " ";
+  display: table;
+}
+.forCompanys .forCustomer .dicoverPrice:after {
+  clear: both;
+}
+.forCompanys .forCustomer .dicoverPrice .price {
+  min-width: 300px;
+  position: relative;
+}
+.forCompanys .forCustomer .dicoverPrice .price label {
+  font: 300 19px 'Roboto Condensed', sans-serif, sans-serif;
+  color: #0099ff;
+}
+.forCompanys .forCustomer .dicoverPrice .price .end_price,
+.forCompanys .forCustomer .dicoverPrice .price .end_price_employe {
+  font: 400 20px 'Roboto Condensed', sans-serif;
+}
+.forCompanys .forCustomer .dicoverPrice .price input {
+  width: 115px;
+  padding: 5px 10px;
+  background-color: #eee;
+  border: 0;
+  transition: .3s;
+}
+.forCompanys .forCustomer .dicoverPrice .price input:focus {
+  background-color: #fff;
+}
+.forCompanys .forCustomer .dicoverPrice .price .price_value {
+  margin-top: -15px;
+  color: #0099ff;
+  text-align: right;
+  line-height: 20px;
+  float: right;
+}
+.forCompanys .forCustomer .dicoverPrice .price table {
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.forCompanys .forCustomer .dicoverPrice .price table caption {
+  padding: 10px 0;
+  font: 400 18px 'Roboto Condensed', sans-serif;
+  color: #333333;
+}
+.forCompanys .forCustomer .dicoverPrice .price table .peoples {
+  font: 400 16px 'Roboto Condensed', sans-serif;
+  color: #333333;
+}
+.forCompanys .forCustomer .dicoverPrice .price table th,
+.forCompanys .forCustomer .dicoverPrice .price table td {
+  font: 400 16px 'Roboto Condensed', sans-serif;
+  color: #333333;
+}
+.forCompanys .forCustomer .dicoverPrice .price table .peoples th {
+  padding: 5px 0;
+  color: #fff;
+  background: #33adff;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+.forCompanys .forCustomer .dicoverPrice .price table .peoples th:nth-child(2n) {
+  background: #008deb;
+}
+.forCompanys .forCustomer .dicoverPrice .price table .peoples_price td {
+  padding: 5px 0;
+  color: #09f;
+  background: #fff;
+  text-align: center;
+}
+.forCompanys .forCustomer .dicoverPrice .price table .peoples_price td:nth-child(2n) {
+  background: #f5f5f5;
+}
+.forCompanys .forWorkers {
+  margin-top: -35px;
+  background-color: #e6e6e6;
+}
+.forCompanys .forWorkers:before,
+.forCompanys .forWorkers:after {
+  content: " ";
+  display: table;
+}
+.forCompanys .forWorkers:after {
+  clear: both;
+}
+.forCompanys .forWorkers .float_right {
+  float: right;
+}
+.forCompanys .forWorkers .float_right article {
+  text-align: right;
+}
+.forCompanys .forWorkers figure {
+  width: 418px;
+  height: 607px;
+  margin: 0;
+  float: left;
+  position: relative;
+  bottom: 0;
+}
+.forCompanys .forWorkers figure:before,
+.forCompanys .forWorkers figure:after {
+  content: " ";
+  display: table;
+}
+.forCompanys .forWorkers figure:after {
+  clear: both;
+}
+.forCompanys .forWorkers figure img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.forCompanys .forWorkers figure img[src*="cleaning"] {
+  margin-top: 10px;
+  opacity: 0;
+}
+.forCompanys .forWorkers figure img[src*="water"] {
+  position: absolute;
+  left: 0;
+}
+.forCompanys .forWorkers .dicoverPrice {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+.forCompanys .forWorkers .dicoverPrice:before,
+.forCompanys .forWorkers .dicoverPrice:after {
+  content: " ";
+  display: table;
+}
+.forCompanys .forWorkers .dicoverPrice:after {
+  clear: both;
+}
+.forCompanys .forWorkers .dicoverPrice .price {
+  min-width: 465px;
+  position: relative;
+  float: right;
+}
+.forCompanys .forWorkers .dicoverPrice .price label {
+  font: 300 19px 'Roboto Condensed', sans-serif, sans-serif;
+  color: #0099ff;
+}
+.forCompanys .forWorkers .dicoverPrice .price .end_price,
+.forCompanys .forWorkers .dicoverPrice .price .end_price_employe {
+  font: 400 20px 'Roboto Condensed', sans-serif;
+}
+.forCompanys .forWorkers .dicoverPrice .price input {
+  width: 115px;
+  padding: 5px 10px;
+  background-color: #eee;
+  border: 0;
+  transition: .3s;
+}
+.forCompanys .forWorkers .dicoverPrice .price input:focus {
+  background-color: #fff;
+}
+.forCompanys .forWorkers .dicoverPrice .price .price_value {
+  margin-top: -15px;
+  color: #0099ff;
+  text-align: right;
+  line-height: 20px;
+  float: right;
+}
+.forCompanys .forWorkers .dicoverPrice .price table {
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.forCompanys .forWorkers .dicoverPrice .price table caption {
+  padding: 10px;
+  font: 400 18px 'Roboto Condensed', sans-serif;
+  color: #333333;
+}
+.forCompanys .forWorkers .dicoverPrice .price table .peoples {
+  font: 400 16px 'Roboto Condensed', sans-serif;
+  color: #333333;
+}
+.forCompanys .forWorkers .dicoverPrice .price table th,
+.forCompanys .forWorkers .dicoverPrice .price table td {
+  font: 400 16px 'Roboto Condensed', sans-serif;
+  color: #333333;
+}
+.forCompanys .forWorkers .dicoverPrice .price table .peoples th {
+  padding: 5px 0;
+  color: #fff;
+  background: #33adff;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+.forCompanys .forWorkers .dicoverPrice .price table .peoples th:nth-child(2n) {
+  background: #008deb;
+}
+.forCompanys .forWorkers .dicoverPrice .price table .peoples_price td {
+  padding: 5px;
+  color: #09f;
+  background: #fff;
+  text-align: center;
+}
+.forCompanys .forWorkers .dicoverPrice .price table .peoples_price td:nth-child(2n) {
+  background: #f5f5f5;
+}
+.forCompanys .forWorkers .dicoverPrice .price table .line td {
+  padding: 0;
+  height: 2px;
+  border: 0;
+  background: url(../img/fill_bg.png) 0 0 no-repeat;
+  background-size: 0 200px;
+}
+.forCompanys .forWorkers .dicoverPrice .price table .line td:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+.forCompanys .forWorkers .dicoverPrice .price table .line td:nth-of-type(even) {
+  background-color: #f5f5f5;
+}
+.forCompanys .forBusenessCenters:before,
+.forCompanys .forBusenessCenters:after {
+  content: " ";
+  display: table;
+}
+.forCompanys .forBusenessCenters:after {
+  clear: both;
+}
+.forCompanys .forBusenessCenters .float_left {
+  float: left;
+}
+.forCompanys .forBusenessCenters .dicoverPrice {
+  width: 100%;
+  height: auto;
+}
+.forCompanys .forBusenessCenters .dicoverPrice:before,
+.forCompanys .forBusenessCenters .dicoverPrice:after {
+  content: " ";
+  display: table;
+}
+.forCompanys .forBusenessCenters .dicoverPrice:after {
+  clear: both;
+}
+.forCompanys .forBusenessCenters .dicoverPrice .price {
+  min-width: 300px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.forCompanys .forBusenessCenters .dicoverPrice .price label {
+  font: 300 19px 'Roboto Condensed', sans-serif, sans-serif;
+  color: #0099ff;
+}
+.forCompanys .forBusenessCenters .dicoverPrice .price .end_price,
+.forCompanys .forBusenessCenters .dicoverPrice .price .end_price_employe {
+  font: 400 20px 'Roboto Condensed', sans-serif;
+}
+.forCompanys .forBusenessCenters .dicoverPrice .price input {
+  width: 115px;
+  padding: 5px 10px;
+  background-color: #eee;
+  border: 0;
+  transition: .3s;
+}
+.forCompanys .forBusenessCenters .dicoverPrice .price input:focus {
+  background-color: #fff;
+}
+.forCompanys .forBusenessCenters .dicoverPrice .price .price_value {
+  margin-top: -15px;
+  color: #0099ff;
+  text-align: right;
+  line-height: 20px;
+  float: right;
+}
+.forCompanys .forBusenessCenters .dicoverPrice .price table {
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.forCompanys .forBusenessCenters .dicoverPrice .price table caption {
+  padding: 10px 0;
+  font: 400 18px 'Roboto Condensed', sans-serif;
+  color: #333333;
+}
+.forCompanys .forBusenessCenters .dicoverPrice .price table .peoples {
+  font: 400 16px 'Roboto Condensed', sans-serif;
+  color: #333333;
+}
+.forCompanys .forBusenessCenters .dicoverPrice .price table th,
+.forCompanys .forBusenessCenters .dicoverPrice .price table td {
+  font: 400 16px 'Roboto Condensed', sans-serif;
+  color: #333333;
+}
+.forCompanys .forBusenessCenters .dicoverPrice .price table .peoples th {
+  padding: 5px 0;
+  color: #fff;
+  background: #33adff;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+.forCompanys .forBusenessCenters .dicoverPrice .price table .peoples th:nth-child(2n) {
+  background: #008deb;
+}
+.forCompanys .forBusenessCenters .dicoverPrice .price table .peoples_price td {
+  padding: 5px 0;
+  color: #09f;
+  background: #fff;
+  text-align: center;
+}
+.forCompanys .forBusenessCenters .dicoverPrice .price table .peoples_price td:nth-child(2n) {
+  background: #f5f5f5;
+}
+.forCompanys .forBusenessCenters .dicoverPrice .price table .line td {
+  height: 2px;
+  padding: 0;
+  border: 0;
+  background: url(../img/fill_bg.png) 0 0 no-repeat;
+  background-size: 0 200px;
+}
+.forCompanys .forBusenessCenters .dicoverPrice .price table .line td:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+.forCompanys .forBusenessCenters .dicoverPrice .price table .line td:nth-of-type(even) {
+  background-color: #f5f5f5;
+}
+.forCompanys .forBusenessCenters figure {
+  height: 673px;
+  margin: 20px 0 0;
+  padding: 0;
+  float: right;
+  position: relative;
+}
+.forCompanys .forBusenessCenters figure img {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+}
+.freeDownload {
+  max-width: 1920px;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  background: #277ca5;
+  box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.7);
+  position: relative;
+  z-index: 2;
+}
+.freeDownload figure {
+  max-width: 1000px;
+  min-width: 320px;
+  margin: 0px auto;
+  padding: 40px 25px;
+}
+.freeDownload figure img {
+  width: 100%;
+}
+.freeDownload a {
+  width: 300px;
+  height: 80px;
+  margin: 0 auto;
+  font: 24px 'Roboto Condensed', sans-serif;
+  color: #fff;
+  background: #338542;
+  text-align: center;
+  text-decoration: none;
+  line-height: 80px;
+  border-radius: 5px;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+  display: block;
+  transition: .3s;
+}
+.freeDownload a:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.freeDownload a span {
+  padding-left: 5px;
+}
+.freeDownload p.footnote {
+  max-width: 810px;
+  height: auto;
+  margin: 45px auto 0;
+  padding-bottom: 45px;
+  font: 12px 'Roboto Condensed', sans-serif;
+  color: #fff;
+  text-align: left;
+}
+.freeDownload p.footnote span {
+  margin-right: 15px;
+  margin-bottom: 36px;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  float: left;
+}
+.partners {
+  max-width: 1920px;
+  background-color: #e6e6e6;
+}
+.partners h2 {
+  padding: 20px;
+  text-align: center;
+  font: 500 50px 'Roboto Condensed', sans-serif, sans-serif;
+  color: #0099ff;
+}
+.partners .partners_wrap {
+  max-width: 980px;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.partners .partners_wrap .logos:before,
+.partners .partners_wrap .logos:after {
+  content: " ";
+  display: table;
+}
+.partners .partners_wrap .logos:after {
+  clear: both;
+}
+.partners .partners_wrap figure {
+  margin: 0 5%;
+  width: 300px;
+  height: 150px;
+  float: left;
+}
+.partners .partners_wrap figure img {
+  width: 100%;
+  height: 100%;
+  background-position: cover;
+}
+.partners .partners_wrap figure.merk img {
+  padding: 20px;
+}
+.partners .partners_wrap figure:nth-of-type(1) {
+  margin-left: 15%;
+}
+.partners .partners_wrap figure.privat {
+  margin: 0 35%;
+}
+.contacts {
+  max-width: 1920px;
+  height: 500px;
+  margin: 0 auto;
+}
+.contacts .googleMaps {
+  max-width: 1920px;
+  height: 500px;
+  margin: 0 auto;
+  border: 0;
+  position: absolute;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.contacts .wrap {
+  max-width: 980px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+.contacts article {
+  max-width: 340px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #1390ba;
+  border-radius: 5px;
+  position: absolute;
+  top: 54px;
+  right: 20px;
+}
+.contacts article h2 {
+  font: bold 20px 'Roboto Condensed', sans-serif;
+  color: #fff;
+}
+.contacts article a {
+  margin: 30px 0 0;
+  font: 400 18px 'Roboto Condensed', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  transition: .3s;
+}
+.contacts article a:hover {
+  color: #e6e6e6;
+  text-decoration: underline;
+}
+.clients {
+  max-width: 1920px;
+  min-height: 380px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  background: #cfcfcf;
+  position: relative;
+}
+.clients h2 {
+  padding-top: 50px;
+  font: bold 48px 'Roboto Condensed', sans-serif;
+  color: #000;
+  text-align: center;
+}
+.clients ul {
+  max-width: 1920px;
+  height: 300px;
+  list-style: none;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.clients ul .container {
+  max-width: 300px;
+  max-height: 200px;
+  margin: 15px;
+  padding-right: 10px;
+  background: #fff;
+  transition: .3s;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: sapce-around;
+}
+.clients ul .container:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.clients ul .container figure {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.clients ul .container figure img {
+  width: 100%;
+  height: 100%;
+}
+.clients ul .container .aboutCompany {
+  width: 150px;
+  max-width: 170px;
+  min-width: 156px;
+  min-height: 100px;
+  position: relative;
+}
+.clients ul .container .aboutCompany h4 {
+  margin-top: 10px;
+  font: 16px 'Roboto Condensed', sans-serif;
+  color: #000;
+  text-align: left;
+}
+.clients ul .container .aboutCompany .littleIcon {
+  height: 24px;
+  margin-top: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.clients ul .container .aboutCompany .littleIcon li {
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+}
+.clients ul .container .aboutCompany .littleIcon li:first-child {
+  margin-left: 0;
+}
+.clients ul .container .aboutCompany a {
+  width: 100%;
+  font: 16px 'Roboto Condensed', sans-serif;
+  color: #33adff;
+  text-decoration: none;
+  text-align: left;
+  position: absolute;
+  bottom: 10px;
+  transition: .3s;
+}
+.clients ul .container .aboutCompany a:hover {
+  color: #0099ff;
+}
+.clients .allCompany {
+  width: 200px;
+  margin: 15px auto 30px;
+  font: bold 20px 'Roboto Condensed', sans-serif;
+  color: #5ebcfb;
+  background: #0099ff;
+  line-height: 50px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  transition: .3s;
+}
+.clients .allCompany:hover {
+  color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+footer {
+  max-width: 1920px;
+  height: auto;
+  margin: 0 auto;
+  padding: 40px;
+  background: #666;
+  box-shadow: inset 0 10px 50px rgba(0, 0, 0, 0.5);
+}
+footer .wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+footer p {
+  padding: 10px 0;
+  font: 12px 'Roboto Condensed', sans-serif;
+  color: #fff;
+}
+.stairWay2Heaven {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+}
+.stairWay2Heaven a {
+  font: 400 16px 'Roboto Condensed', sans-serif;
+  color: #0099ff;
+  text-decoration: none;
+  transition: .3s;
+  position: relative;
+}
+.stairWay2Heaven a:hover,
+.stairWay2Heaven a:active {
+  color: #003d66;
+}
+@media screen and (max-width: 910px) {
+  .slider .slide {
+    justify-content: space-between;
+  }
+  .slider .slide .left {
+    max-width: 495px;
+    margin-left: 15px;
+  }
+  .contacts {
+    min-height: 740px;
+  }
+  .contacts iframe {
+    position: static;
+    z-index: 1;
+  }
+  .contacts .wrap article {
+    max-width: 100%;
+    margin: 0;
+    padding-top: 530px;
+    border-radius: 0;
+    text-align: center;
+    position: static;
+  }
+}
+@media screen and (max-width: 900px) {
+  .slider {
+    min-height: 410px;
+  }
+  .slider .slide .left {
+    max-width: 100% !important;
+  }
+  .slider .slide .left article {
+    max-width: 100% !important;
+  }
+  .slider .slide .right {
+    display: none;
+  }
+  .forCompanys .forCustomer .wrap {
+    min-height: 240px;
+  }
+  .forCompanys .forCustomer article {
+    max-width: 100%;
+  }
+  .forCompanys .forCustomer article p {
+    padding-right: 15px;
+  }
+  .forCompanys .forCustomer figure {
+    display: none;
+  }
+  .forCompanys .forCustomer .dicoverPrice {
+    margin-top: 25px;
+    position: static;
+  }
+  .forCompanys .forCustomer .dicoverPrice .links {
+    margin-bottom: 30px;
+  }
+  .forCompanys .forCustomer .dicoverPrice .price {
+    height: auto;
+    margin-bottom: 15px;
+    float: none;
+  }
+  .forCompanys .forWorkers .wrap {
+    min-height: 300px;
+  }
+  .forCompanys .forWorkers article {
+    max-width: 100%;
+    text-align: left;
+    float: none;
+  }
+  .forCompanys .forWorkers article p {
+    margin-left: 60px;
+    margin-right: 0;
+  }
+  .forCompanys .forWorkers figure {
+    display: none;
+  }
+  .forCompanys .forWorkers .dicoverPrice {
+    max-width: 100%;
+    margin-top: 25px;
+    padding-left: 15px;
+    text-align: left;
+    position: static;
+  }
+  .forCompanys .forWorkers .dicoverPrice .price {
+    max-width: 352px;
+    float: none;
+  }
+  .forCompanys .forBusenessCenters .wrap {
+    min-height: 315px;
+  }
+  .forCompanys .forBusenessCenters article,
+  .forCompanys .forBusenessCenters article ul,
+  .forCompanys .forBusenessCenters article ul p,
+  .forCompanys .forBusenessCenters article ul li {
+    max-width: 100%;
+  }
+  .forCompanys .forBusenessCenters figure {
+    display: none;
+  }
+  .forCompanys .forBusenessCenters .dicoverPrice {
+    margin-top: 25px;
+    position: static;
+  }
+  .forCompanys .forBusenessCenters .dicoverPrice .links .discover {
+    margin-left: 20px;
+  }
+  .forCompanys .forBusenessCenters .dicoverPrice .price {
+    max-width: 350px;
+    float: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .slider .slide .left {
+    margin-top: 25px;
+  }
+  .forCompanys .forCustomer .wrap {
+    min-height: 255px;
+  }
+  .forCompanys .forBusenessCenters .wrap {
+    min-height: 355px;
+  }
+}
+@media screen and (max-width: 565px) {
+  header .desktopNav {
+    display: none !important;
+  }
+  header .headerWrap {
+    text-align: center;
+  }
+  header .menu {
+    height: 62px;
+    margin-left: -60px;
+    padding: 20px 40px;
+    font: 600 16px 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    color: #fff;
+    background: #007acc;
+    display: block !important;
+  }
+  header .menu:hover,
+  header .menu:active {
+    color: #eee;
+    background: #0099ff;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+  header .mobileNav {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    z-index: 2;
+  }
+  header .mobileNav a {
+    width: 100%;
+    height: 62px;
+    font: 300 16px 'Roboto Condensed', sans-serif;
+    color: #fff;
+    background: #007acc;
+    text-decoration: none;
+    text-align: center;
+    border-top: 1px solid transparent;
+    line-height: 62px;
+    display: block;
+  }
+  header .mobileNav a:hover,
+  header .mobileNav a:active {
+    color: #eee;
+    background: #0099ff;
+    border-top: 1px solid #0a9dff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+  .slider {
+    min-height: 520px;
+  }
+  .slider .slide .right {
+    display: none;
+  }
+  .slider .slide .right img {
+    position: static;
+  }
+  .forCompanys .forBusenessCenters .wrap {
+    min-height: 375px;
+    padding-right: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider .slide .left article {
+    margin-left: 0;
+  }
+  .slider .slide .left article h1 {
+    text-align: center;
+  }
+  .slider .slide .left article p {
+    padding-left: 0px;
+  }
+  .slider .slide .left a {
+    margin: 0;
+  }
+  .assist .assistWrap h2 {
+    text-align: center;
+  }
+  .assist .assistWrap p {
+    margin: 30px 5px;
+  }
+  .forCompanys .forCustomer article {
+    padding-bottom: 50px;
+  }
+  .forCompanys .forCustomer article h2 {
+    text-align: center;
+  }
+  .forCompanys .forCustomer article p {
+    margin-left: 0;
+  }
+  .forCompanys .forWorkers article h2 {
+    text-align: center;
+  }
+  .forCompanys .forWorkers article p {
+    margin-left: 0;
+  }
+  .forCompanys .forBusenessCenters article h2 {
+    text-align: center;
+  }
+  .forCompanys .forBusenessCenters article ul p {
+    padding-left: 0;
+  }
+  .forCompanys .forBusenessCenters article ul li {
+    margin-left: 0;
+    list-style: none;
+  }
+  .forCompanys .forBusenessCenters article ul li:first-letter {
+    font: 20px 'Roboto Condensed', sans-serif;
+    color: #333;
+  }
+  .forCompanys .dicoverPrice .links a,
+  .forCompanys .dicoverPrice .links .discover {
+    width: 100%;
+    display: block;
+  }
+  .forCompanys .forCustomer .dicoverPrice .links .discover,
+  .forCompanys .forWorkers .dicoverPrice .links .discover,
+  .forCompanys .forBusenessCenters .dicoverPrice .links .discover {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .stairWay2Heaven {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  .stairWay2Heaven a {
+    width: 100%;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    line-height: 30px;
+    display: block;
+  }
+  .stairWay2Heaven a:hover,
+  .stairWay2Heaven a:active {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+@media screen and (max-width: 320px) {
+  .slider .slide .left {
+    min-height: 500px;
+  }
+  .forCompanys .forCustomer .dicoverPrice,
+  .forCompanys .forWorkers .dicoverPrice,
+  .forCompanys .forBusenessCenters .dicoverPrice {
+    padding-left: 10px;
+  }
+  .forCompanys .forCustomer .dicoverPrice,
+  .forCompanys .forWorkers .dicoverPrice {
+    margin-left: 0;
+  }
+  .forCompanys .forCustomer .dicoverPrice .links,
+  .forCompanys .forWorkers .dicoverPrice .links {
+    margin-right: 15px;
+  }
+  .forCompanys .forBusenessCenters .dicoverPrice {
+    margin-left: 0;
+  }
+  .forCompanys .forBusenessCenters .dicoverPrice .links {
+    margin-right: 0;
+  }
+  .forCompanys .forWorkers article p,
+  .forCompanys .forBusenessCenters article p {
+    padding-right: 15px;
+  }
+  .forCompanys .forWorkers article ul p,
+  .forCompanys .forBusenessCenters article ul p,
+  .forCompanys .forWorkers article ul li,
+  .forCompanys .forBusenessCenters article ul li {
+    padding-right: 15px;
+  }
+}

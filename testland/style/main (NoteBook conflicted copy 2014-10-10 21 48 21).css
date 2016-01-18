@@ -1,0 +1,566 @@
+@font-face {
+  font-family: Bebas;
+  src: url(../Bebas_Neue_Cyrillic.ttf);
+}
+.clear {
+  clear: both;
+}
+body {
+  background: url(../img/bg.jpg);
+}
+main {
+  width: 100%;
+}
+main header .headerTop {
+  width: 1200px;
+  height: 117px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+main header .headerTop figure {
+  align-self: center;
+}
+main header .headerTop .phone,
+main header .headerTop .delivery,
+main header .headerTop .basket {
+  align-self: center;
+  width: 290px;
+}
+main header .headerTop .phone img,
+main header .headerTop .delivery img,
+main header .headerTop .basket img {
+  padding-right: 10px;
+  float: left;
+}
+main header .headerTop .phone p,
+main header .headerTop .delivery p,
+main header .headerTop .basket p {
+  margin: 0;
+  padding: 5px;
+  font-family: Arial;
+  font-size: 20px;
+  color: #242424;
+}
+main header .headerTop .phone a,
+main header .headerTop .delivery a,
+main header .headerTop .basket a {
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px dotted #1d88e3;
+}
+main header .wrap {
+  width: 100%;
+  height: 89px;
+  background: url(../img/menu_bg.png);
+}
+main header .wrap nav {
+  padding-left: 75px;
+  float: left;
+}
+main header .wrap nav ul {
+  width: 555px;
+  height: 89px;
+  margin: 0 auto;
+  float: left;
+}
+main header .wrap nav ul li {
+  margin-top: 35px;
+  float: left;
+}
+main header .wrap nav ul li a {
+  margin: 0;
+  padding: 40px 20px 40px 0;
+  font-family: Arial;
+  font-size: 20px;
+  color: #1d88e3;
+  text-decoration: none;
+}
+main header .wrap form {
+  margin-top: 25px;
+  margin-right: 60px;
+  float: right;
+  position: relative;
+}
+main header .wrap form label[for="search"] {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  color: #7C7C7C;
+}
+main header .wrap form #search {
+  padding: 10px 5px 10px 30px;
+  font-size: 14px;
+  color: #3c3c3c;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  outline: none;
+  inset: none;
+}
+main header .wrap form #search:focus {
+  color: #000;
+  outline: none;
+}
+main section {
+  width: 100%;
+}
+main section #features {
+  width: 1162px;
+  height: 72px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+main section #features .box {
+  padding-top: 25px;
+}
+main section #features .box figure {
+  float: left;
+}
+main section #features .box figure img {
+  margin-right: 10px;
+}
+main section #features .box p {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  font-size: 14px;
+  color: #242424;
+}
+main section #promo {
+  float: left;
+  padding-bottom: 30px;
+}
+main section #promo .slide {
+  width: 880px;
+  height: 275px;
+  margin-left: 75px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid red;
+}
+main section #promo .slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main section #promo .slide figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+main section .promo {
+  width: 300px;
+  height: 275px;
+  margin-right: 60px;
+  float: right;
+  border: 1px solid #1d88e3;
+}
+main section #brands {
+  width: 270px;
+  height: 480px;
+  margin-left: 75px;
+  float: left;
+  overflow: hidden;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+main section #brands h3 {
+  margin: 0;
+  padding: 15px;
+  font-family: Arial;
+  font-size: 18px;
+  color: #242424;
+  float: left;
+}
+main section #brands a {
+  padding: 20px;
+  color: #1d88e3;
+  font-size: 14px;
+  float: right;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+main section #brands a:hover {
+  text-decoration: none;
+}
+main section #brands img {
+  padding-bottom: 20px;
+}
+main section #brands .brandName {
+  width: 270px;
+  height: 400px;
+}
+main section #brands .brandName .left {
+  width: 135px;
+  height: 400px;
+  float: left;
+}
+main section #brands .brandName .left a {
+  padding: 6px 20px;
+  display: block;
+  float: none;
+}
+main section #brands .brandName .right {
+  width: 135px;
+  float: right;
+}
+main section #brands .brandName .right a {
+  padding: 6px 20px;
+  display: block;
+  float: none;
+}
+main section #bestProd {
+  width: 880px;
+  height: 480px;
+  margin-right: 60px;
+  float: right;
+  overflow: hidden;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+main section #bestProd h2 {
+  margin: 0;
+  padding: 16px;
+  font-family: Arial;
+  font-size: 18px;
+  color: #1d88e3;
+}
+main section #bestProd #prodBlock {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+main section #bestProd #prodBlock .block {
+  width: 275px;
+  height: 400px;
+  float: left;
+  position: relative;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+main section #bestProd #prodBlock .block:hover {
+  background: #e2e9f1;
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  transform: scale(1.01);
+}
+main section #bestProd #prodBlock .block img {
+  position: absolute;
+}
+main section #bestProd #prodBlock .block figure {
+  padding: 10px;
+}
+main section #bestProd #prodBlock .block figure img {
+  width: 258px;
+  height: 258px;
+  position: static;
+}
+main section #bestProd #prodBlock .block a {
+  display: block;
+  width: 90%;
+  margin: 0;
+  padding: 10px;
+  font-family: Arial;
+  font-size: 16px;
+  color: #1d88e3;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+main section #bestProd #prodBlock .block a:hover {
+  text-decoration: none;
+}
+main section #bestProd #prodBlock .block .price {
+  width: 100px;
+  margin-top: 20px;
+  margin-left: 10px;
+  float: left;
+}
+main section #bestProd #prodBlock .block .price .oldPrice {
+  font-family: Arial;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+main section #bestProd #prodBlock .block .price .newPrice {
+  font-family: Arial;
+  font-size: 19px;
+}
+main section #bestProd #prodBlock .block .buyBotton {
+  position: absolute;
+  right: 140px;
+  bottom: 55px;
+}
+main section #bestProd #prodBlock .block .buyBotton img {
+  position: absolute;
+  z-index: 1;
+}
+main section #bestProd #prodBlock .block .buyBotton a {
+  font-family: Bebas;
+  font-size: 21px;
+  color: #FFF;
+  text-decoration: none;
+  position: absolute;
+  right: -63px;
+  z-index: 2;
+}
+main section .lastblock {
+  width: 100%;
+  height: 372px;
+  margin-top: 30px;
+  background: url(../img/about_bg.png);
+}
+main section .lastblock #about {
+  width: 730px;
+  height: 300px;
+  margin-top: 10px;
+  margin-left: 75px;
+  float: left;
+}
+main section .lastblock #about h3 {
+  margin: 0;
+  padding: 20px 0;
+  font-family: Arial;
+  font-size: 30px;
+  color: #242424;
+}
+main section .lastblock #about p {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  font-size: 14px;
+  color: #242424;
+}
+main section .lastblock #about p:last-child {
+  margin-top: 20px;
+}
+main section .lastblock #blog {
+  width: 430px;
+  height: 300px;
+  margin-top: 30px;
+  margin-right: 60px;
+  float: right;
+}
+main section .lastblock #blog .title img {
+  padding-right: 20px;
+  float: left;
+}
+main section .lastblock #blog .title a {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  font-size: 18px;
+  color: #1d88e3;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+main section .lastblock #blog .title a:hover {
+  text-decoration: none;
+}
+main section .lastblock #blog .title p {
+  margin: 10px;
+  padding: 10px;
+  font-family: Arial;
+  font-size: 14px;
+  color: #242424;
+}
+main section .lastblock #blog .title:nth-of-type(2) {
+  margin-top: 20px;
+}
+main footer {
+  width: 100%;
+  height: 455px;
+  padding-top: 35px;
+  background: url(../img/footer_bg.png);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+main footer #first,
+main footer #second,
+main footer #third,
+main footer #forth {
+  width: 311px;
+}
+main footer #first {
+  margin-left: 75px;
+}
+main footer #first .contact h4 {
+  margin: 0;
+  padding: 0 0 20px 0;
+  font-family: Arial;
+  font-size: 18px;
+  color: #242424;
+}
+main footer #first .contact p {
+  margin: 0;
+  padding: 5px 0 5px 0;
+  font-family: Arial;
+  font-size: 16px;
+  color: #242424;
+}
+main footer #first .contact a {
+  color: #1d88e3;
+}
+main footer #first .workTime {
+  margin-top: 40px;
+}
+main footer #first .workTime h4 {
+  margin: 0;
+  padding: 0 0 20px 0;
+  font-family: Arial;
+  font-size: 18px;
+  color: #242424;
+}
+main footer #first .workTime p {
+  margin: 0;
+  padding: 5px 0 5px 0;
+  font-family: Arial;
+  font-size: 16px;
+  color: #242424;
+}
+main footer #first .onlineStore {
+  margin-top: 40px;
+}
+main footer #first .onlineStore h4 {
+  margin: 0;
+  padding: 0 0 20px 0;
+  font-family: Arial;
+  font-size: 18px;
+  color: #242424;
+}
+main footer #first .onlineStore p {
+  margin: 0;
+  padding: 5px 0 5px 0;
+  font-family: Arial;
+  font-size: 16px;
+  color: #242424;
+}
+main footer #second .delivery h4 {
+  margin: 0;
+  padding: 0 0 20px 0;
+  font-family: Arial;
+  font-size: 18px;
+  color: #242424;
+}
+main footer #second .delivery a {
+  display: block;
+  width: 150px;
+  margin: 0;
+  padding: 5px 0 5px 0;
+  font-family: Arial;
+  font-size: 14px;
+  color: #1d88e3;
+}
+main footer #second .regions {
+  margin-top: 40px;
+}
+main footer #second .regions h4 {
+  margin: 0;
+  padding: 0 0 20px 0;
+  font-family: Arial;
+  font-size: 18px;
+  color: #242424;
+}
+main footer #second .regions a {
+  display: block;
+  width: 200px;
+  margin: 0;
+  padding: 5px 0 5px 0;
+  font-family: Arial;
+  font-size: 14px;
+  color: #1d88e3;
+}
+main footer #third .pay h4 {
+  margin: 0;
+  padding: 0 0 20px 0;
+  font-family: Arial;
+  font-size: 18px;
+  color: #242424;
+}
+main footer #third .pay a {
+  display: block;
+  width: 200px;
+  margin: 0;
+  padding: 5px 0 5px 0;
+  font-family: Arial;
+  font-size: 14px;
+  color: #1d88e3;
+}
+main footer #third .payments {
+  margin-top: 40px;
+}
+main footer #third .payments h4 {
+  margin: 0;
+  padding: 0 0 20px 0;
+  font-family: Arial;
+  font-size: 18px;
+  color: #242424;
+}
+main footer #third .payments img {
+  margin-right: 10px;
+}
+main footer #third .useInf {
+  margin-top: 40px;
+}
+main footer #third .useInf h4 {
+  margin: 0;
+  padding: 0 0 20px 0;
+  font-family: Arial;
+  font-size: 18px;
+  color: #242424;
+}
+main footer #third .useInf a {
+  display: block;
+  width: 200px;
+  margin: 0;
+  padding: 5px 0 5px 0;
+  font-family: Arial;
+  font-size: 14px;
+  color: #1d88e3;
+}
+main footer #forth h4 {
+  margin: 0;
+  padding: 0 0 20px 0;
+  font-family: Arial;
+  font-size: 18px;
+  color: #242424;
+}
+main footer #forth .sub .subscribe {
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 14px;
+  color: #3c3c3c;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  outline: none;
+  inset: none;
+}
+main footer #forth .sub .subscribe:focus {
+  color: #000;
+  outline: none;
+}
+main footer #forth .sub .submit {
+  margin: 2px 0 0 -5px;
+  font-family: Bebas;
+  font-size: 18px;
+  color: #FFF;
+  background: #1ed42b;
+  border: 0;
+  line-height: 38px;
+}

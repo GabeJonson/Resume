@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+		<link rel="stylesheet" href="style/main.css" />
+		<!-- FAVICON -->
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<!-- RESET CSS -->
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+		<!-- FONT AWEESOME -->
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+		<!-- PREFIX FREE -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+		<!-- HTML5 IE9 -->
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!-- CSS3 IE9 -->
+		<!--[if lt IE 9]>
+	    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="http://unslider.com/unslider.min.js"></script>
+	<title>Jewelry Store</title>
+</head>
+<body>
+	<main>
+		<header>
+			<div id="top">
+				<p>Добро пожаловать в наш интернет-магазин!</p>
+				<div id="options">
+					<div class="check">
+						<i class="fa fa-shopping-cart"></i>
+						<p>Корзина: 0 шт. - 0,00 $ <i class="fa fa-angle-down"></i> <!-- <span>|</span> --></p>
+					</div>
+					<!-- <div class="lang">
+						<p>Ru <i class="fa fa-angle-down"></i> <span>|</span></p>
+					</div>
+					<div class="money">
+						<p>$ <i class="fa fa-angle-down"></i></p>
+					</div> -->
+				</div>
+			<div id="clear"></div>
+			</div>
+			<figure>
+				<a href="index.html">
+					<img src="img/logo.gif" height="60" width="305" alt="JewerlyStore">
+				</a>
+			</figure>
+			<div id="bottom">
+				<nav>
+					<ul>
+						<li><a href="index.html">главная</a></li>
+						<li><a href="pages/login.html">мой профайл</a></li>
+						<li><a href="pages/login.html">список желаний</a></li>
+						<li><a href="pages/checkout.html">оформить заказ</a></li>
+						<li><a href="pages/login.html">войти</a></li>
+					</ul>
+				</nav>
+				<form method="get">
+					<input type="text" name="search" placeholder="Search here">
+					<a href="#" title="search"></a>
+					<i class="fa fa-search"></i>
+				</form>
+			</div>
+		<div id="clear"></div>
+		</header>
+		<aside>
+			<div class="category">
+				<h2>Категории</h2>
+				<ul>
+					<li><i class="fa fa-angle-right"></i><a href="pages/bracelets.html">Браслеты</a></li>
+					<li><i class="fa fa-angle-right"></i><a href="pages/earrings.html">Сережки</a></li>
+					<li><i class="fa fa-angle-right"></i><a href="pages/necklaces.html">Подвески</a></li>
+					<li><i class="fa fa-angle-right"></i><a href="pages/rings.html">Кольца</a></li>
+					<li><i class="fa fa-angle-right"></i><a href="pages/watches.html">Часы</a></li>
+					<li><i class="fa fa-angle-right"></i><a href="pages/wedding.html">Свадебные кольца</a></li>
+				</ul>
+			</div>
+			<div class="sale">
+				<h2>Распродажа</h2>
+				<figure>
+					<img src="img/ring.jpg" alt="ring">
+					<p>14K White Gold 0.33 Carat Diamond Stud Earrings</p>
+					<span>234,57 $</span><span>220,00 $</span>
+					<a href="#" title="Cheack out"><i class="fa fa-shopping-cart"></i></a>
+				</figure>
+				<div id="clear"></div>
+			</div>
+			<div class="saleBanner">
+				<figure>
+					<a href="#">
+						<img src="img/banner.jpg" alt="Banner">
+						<div class="text">
+							<p>80% OFF</p>
+							<p>Mega <br> sale</p>
+							<p>Enter Shop <i class="fa fa-angle-right"></i></p>
+						</div>
+					</a>
+				</figure>
+			</div>
+		</aside>
+		<section>
+			<div class="slide">
+				<div class="banner">
+				<h2>Sale <br> 50%</h2>
+				<a href="#" class="unslider-arrow prev"><i class="fa fa-angle-left"></i></a>
+				<a href="#" class="unslider-arrow next"><i class="fa fa-angle-right"></i></a>
+				    <ul>
+				        <li><img src="img/slider_pic1.jpg" height="460" width="100%" alt="slidepic"></li>
+				        <li><img src="img/slider_pic2.jpg" height="460" width="100%" alt="slidepic"></li>
+				        <li><img src="img/slider_pic3.jpg" height="460" width="100%" alt="slidepic"></li>
+				    </ul>
+				</div>
+			</div>
+			<div class="twoBlock">
+				<div class="blockOne">
+					<img src="img/banner1.jpg" height="271" width="435" alt="Ring">
+					<p>Кольца</p>
+					<a href="#">View All</a>
+				</div>
+				<div class="blockTwo">
+					<img src="img/banner2.jpg" height="271" width="435" alt="Bracelets">
+					<p>Браслеты</p>
+					<a href="#">View All</a>
+				</div>
+			</div>
+			<div id="clear"></div>
+			<h2>Новые товары</h2>
+			<div id="box">
+				<div class="box box1">
+					<img src="img/file_15.jpg" height="228" width="228" alt="">
+					<h3>Новое</h3>
+					<p>14K Yellow Gold Princess Diamond Stud Earrings</p>
+					<span>157,31 $</span>
+					<a href="#"><i class="fa fa-shopping-cart"></i></a>
+				</div>
+				<div class="box box2">
+					<img src="img/file_17.jpg" height="228" width="228" alt="">
+					<h3>Новое</h3>
+					<p>Sterling Silver Amethyst Butterfly</p>
+					<span>98,12 $</span>
+					<a href="#"><i class="fa fa-shopping-cart"></i></a>
+				</div>
+				<div class="box box3">
+					<img src="img/file_3_11.jpg" height="228" width="228" alt="">
+					<h3>Новое</h3>
+					<p>Design Necklace Earrings Set in Gift Box Bucasi</p>
+					<span>752,21 $</span>
+					<a href="#"><i class="fa fa-shopping-cart"></i></a>
+				</div>
+				<div class="box box4">
+					<img src="img/file_25.jpg" height="228" width="228" alt="">
+					<h3>Новое</h3>
+					<p>10k Choice of White or Yellow Gold Twist Ring</p>
+					<span>452,13 $</span>
+					<a href="#"><i class="fa fa-shopping-cart"></i></a>
+				</div>
+				<div class="box box5">
+					<img src="img/file_3_21.jpg" height="228" width="228" alt="">
+					<h3>Новое</h3>
+					<p>Three Stone Round Brilliant Diamond Ring</p>
+					<span>452,31 $</span>
+					<a href="#"><i class="fa fa-shopping-cart"></i></a>
+				</div>
+				<div class="box box6">
+					<img src="img/file_2_37.jpg" height="228" width="228" alt="">
+					<h3>Новое</h3>
+					<p>14k Two-Tone Diamond Heart Ring</p>
+					<span>93,14 $</span>
+					<a href="#"><i class="fa fa-shopping-cart"></i></a>
+				</div>
+			</div>
+		</section>
+		<div id="clear"></div>
+		<footer>
+			<div class="top">
+				<div class="cont">
+					<h3>Контакты</h3>
+					<p>Адрес магазина</p>
+					<p>Номер телефона</p>
+					<i class="fa fa-envelope"></i><a href="mailto: some@mail.com">Ваша почта</a>
+					<div class="socBlock">
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-rss"></i></a>
+					</div>
+				</div>
+				<div class="whyBuy">
+					<h3>Почему стоит купить</h3>
+					<ul>
+						<li><a href="#">Доставка и возврат</a></li>
+						<li><a href="#">Безопасные покупки</a></li>
+						<li><a href="#">Международные перевозки</a></li>
+						<li><a href="#">Партнеры</a></li>
+						<li><a href="#">Группа продаж</a></li>
+					</ul>
+				</div>
+				<div class="account">
+					<h3>Мой акаунт</h3>
+					<ul>
+						<li><a href="#">Войти</a></li>
+						<li><a href="#">Просмотр корзины</a></li>
+						<li><a href="#">Мои предпочтения</a></li>
+						<li><a href="#">Мой заказ</a></li>
+						<li><a href="#">Помощь</a></li>
+					</ul>
+				</div>
+				<div class="inf">
+					<h3>Информация</h3>
+					<ul>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Ослуживание клиентов</a></li>
+						<li><a href="#">Настройки Шаблона</a></li>
+						<li><a href="#">Политика конфиденциальности</a></li>
+						<li><a href="#">Карта сайта</a></li>
+						<li><a href="#">Критерии поиска</a></li>
+						<li><a href="#">Расширенный поиск</a></li>
+						<li><a href="#">Заказы и возвраты</a></li>
+						<li><a href="#">Обратная связь</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="clear"></div>
+		</footer>
+		<div class="bottom">
+			<p>&copy; Онлайн Магазин. Все права защищены</p>
+			<img src="img/bnr_nowAccepting_150x60.gif" height="60" width="150" alt="">
+		</div>
+	</main>
+<script>
+	$(function() {
+	    $('.banner').unslider();
+	});
+</script>
+<script>
+    var unslider = $('.banner').unslider();
+    
+    $('.unslider-arrow').click(function() {
+        var fn = this.className.split(' ')[1];
+        
+        //  Either do unslider.data('unslider').next() or .prev(		depending on the className
+        unslider.data('unslider')[fn]();
+    });
+</script>
+	</script>
+</body>
+</html>

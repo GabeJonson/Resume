@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<link rel="stylesheet" href="style/main.min.css" />
+	<!-- <link rel="stylesheet" href="" />
+	-->
+	<!-- RESET CSS -->
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+	<!-- FONT AWEESOME -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+	<!-- PREFIX FREE -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<!-- JQUERY -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+	<!-- HTML5 IE9 -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- CSS3 IE9 -->
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<title>Bookler</title>
+	<script>
+		$(document).ready(function(){
+			$('a[href*=#]').bind("click", function(e){
+			var anchor = $(this);
+			$('html, body').stop().animate({
+			   scrollTop: $(anchor.attr('href')).offset().top
+			}, 900);
+			e.preventDefault();
+   		});
+   return false;
+});
+	</script>
+</head>
+<body>
+	<main>
+		<header>
+			<div id="top">
+				<figure>
+					<a href="index.html">
+						<img src="img/logo.png" alt="Logo"></a>
+				</figure>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html" class="active">home</a>
+					</li>
+					<li>
+						<a href="pages/soon.html">coming soon</a>
+					</li>
+					<li>
+						<a href="pages/sellers.html">top sellers</a>
+					</li>
+					<li>
+						<a href="pages/authors.html">authors</a>
+					</li>
+					<li>
+						<a href="pages/about.html">about</a>
+					</li>
+					<li>
+						<a href="pages/contacts.html">contacts</a>
+					</li>
+				</ul>
+			</nav>
+			<div id="clear"></div>
+			<div id="bottom">
+				<figure>
+					<img src="img/page1_img1.png" alt="Big picture">
+					<h1>BOOKLER IS A COMPANY CREATED BY AUTHORS, FOR AUTHORS</h1>
+					<p>
+						Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta
+					</p>
+					<a href="#">more info</a>
+				</figure>
+			</div>
+		</header>
+		<section>
+			<article id="welcome">
+				<h2>welcome!</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore architecto quisquam dolorem ipsa quo dolores perferendis repellendus veniam, accusantium eius deleniti, rem quod quibusdam harum modi velit, enim, nisi? Eveniet?
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repellat eligendi placeat, consequuntur corrupti modi commodi sit est enim provident, aliquam magni obcaecati fuga ipsam ratione iste dolore dolor rem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repellat eligendi placeat, consequuntur corrupti modi commodi sit est enim provident, aliquam magni obcaecati fuga ipsam ratione iste dolore dolor rem.
+				</p>
+				<div id="box">
+					<div class="box box1">
+						<img src="img/page1_img2.png" alt="img">
+						<h3>children's books</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, odit?
+						</p>
+						<a href="#">more info</a>
+					</div>
+					<div class="box box2">
+						<img src="img/page1_img3.png" alt="img">
+						<h3>romace</h3>
+						<p>
+							Nemo officiis doloremque totam consequatur possimus aut ducimus ipsam animi.
+						</p>
+						<a href="#">more info</a>
+					</div>
+					<div class="box box3">
+						<img src="img/page1_img4.png" alt="img">
+						<h3>history</h3>
+						<p>
+							Possimus est minus voluptates ducimus, eligendi molestias numquam dolor voluptate.
+						</p>
+						<a href="#">more info</a>
+					</div>
+				</div>
+			<div id="clear"></div>
+			</article>
+			<article id="releases">
+				<h2>new releases</h2>
+				<div id="block">
+					<div class="box box1">
+						<img src="img/page1_img6.png" alt="img">
+						<a href="#">NASCEUS USLA DUI</a>
+						<p>Lorem ipsum dolor sit amet.</p>
+					</div>
+					<div class="box box2">
+						<img src="img/page1_img7.png" alt="img">
+						<a href="#">USLA DUI FUSCEU</a>
+						<p>Sequi nostrum blanditiis dolor neque.</p>
+					</div>
+					<div class="box box3">
+						<img src="img/page1_img8.png" alt="img">
+						<a href="#">MALE SU ADA ODIO</a>
+						<p>Voluptas deserunt unde quod totam.</p>
+					</div>
+					<div class="box box4">
+						<img src="img/page1_img9.png" alt="img">
+						<a href="#">DUI FUSCEU</a>
+						<p>Maiores soluta, et magni id?</p>
+					</div>
+					<div class="box box5">
+						<img src="img/page1_img10.png" alt="img">
+						<a href="#">FUSCEU GIAT</a>
+						<p>Totam natus beatae magni eligendi!</p>
+					</div>
+					<div class="box box6">
+						<img src="img/page1_img11.png" alt="img">
+						<a href="#">GIAT MALE</a>
+						<p>Autem amet cupiditate praesentium natus!</p>
+					</div>
+				</div>
+			</article>
+		</section>
+		<footer>
+			<div id="contact">
+				<h2>our contacts</h2>
+				<p>Call us at +1 800 559 6580</p>
+			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3025.947377687381!2d-73.9846361!3d40.6751284!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b0027b8a3e7%3A0xbfc8969b22599b24!2s1st+St%2C+Brooklyn%2C+NY!5e0!3m2!1sru!2s!4v1411996221319" width="100%" height="600" frameborder="0" style="border:0"></iframe>
+			<p class="privat">
+				Designer © 2014 | 
+				<a href="#">Privacy policy</a>
+			</p>
+		</footer>
+	</main>
+<a href="#top">
+<i class="fa fa-arrow-up"></i>
+</a>
+</body>
+</html>

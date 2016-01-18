@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<link rel="stylesheet" href="style/main.min.css" />
+	<link rel="stylesheet" href="style/media.min.css" />
+	<!-- GOOGLE FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
+	<!-- RESET CSS -->
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+	<!-- FONT AWEESOME -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+	<!-- PREFIX FREE -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<!-- JQUERY -->
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+	<!-- HTML5 IE9 -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- CSS3 IE9 -->
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<script>
+			$(function () {
+		    	var element = $(".fa-arrow-up"), display;
+		    	$(window).scroll(function () {
+		        display = $(this).scrollTop() >= 10;
+		        display != element.css('opacity') && element.stop().animate({ 'opacity': display }, 100);
+		    	});
+		    });
+		</script>
+	<script>
+		    $(document).ready(function(){
+				$('a[href*=#]').bind("click", function(e){
+		      	var anchor = $(this);
+		      	$('html, body').stop().animate({
+		         	scrollTop: $(anchor.attr('href')).offset().top
+		      	}, 900);
+		      	e.preventDefault();
+		   });
+		   return false;
+		});
+		</script>
+	<title>Computer Service</title>
+</head>
+<body>
+	<div id="overlay">
+		<p>
+			THIS SITE DOES NOT WORK IN YOUR DEVISE, PLEASE LOOCK UP ON TABLET OR DESTOP! SORY FOR THE TROUBLE
+		</p>
+	</div>
+	<main>
+		<header id="top">
+			<div class="headerTop">
+				<figure>
+					<a href="index.html">
+						<img src="img/logo.png" height="67" width="307" alt="Logo"></a>
+				</figure>
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html" class="active">Home</a>
+						</li>
+						<li>
+							<a href="#">About</a>
+						</li>
+						<li>
+							<a href="#">Services</a>
+						</li>
+						<li>
+							<a href="#">Blog</a>
+						</li>
+						<li>
+							<a href="#">Contacts</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="clear"></div>
+			<div class="bighead">
+				<h1>
+					offering excellent
+					<span>tech</span>
+					<br>
+					<span>support</span>
+					<br>at competitive prices</h1>
+				<img src="img/page1_block_bg.png" height="525" width="1600" alt="page1_block_bg">
+				<a href="#">More info</a>
+			</div>
+		</header>
+		<section>
+			<article class="top">
+				<div class="box box1">
+					<p>01</p>
+					<h2>
+						HOME
+						<span>SERVICES</span>
+					</h2>
+					<div id="clear"></div>
+					<ul class="boxNav">
+						<li> <i class="fa fa-angle-right"></i>
+							<a href="#">Same Day In-Home Support</a>
+						</li>
+						<li> <i class="fa fa-angle-right"></i>
+							<a href="#">Certified Technicians</a>
+						</li>
+						<li>
+							<i class="fa fa-angle-right"></i>
+							<a href="#">Virus & Spyware Removal</a>
+						</li>
+						<li>
+							<i class="fa fa-angle-right"></i>
+							<a href="#">Wireless Networking</a>
+						</li>
+					</ul>
+				</div>
+				<div class="box box2">
+					<p>02</p>
+					<h2>
+						BUSINESS
+						<span>SERVICES</span>
+					</h2>
+					<div id="clear"></div>
+					<ul class="boxNav">
+						<li>
+							<i class="fa fa-angle-right"></i>
+							<a href="#">On-site Engineers</a>
+						</li>
+						<li>
+							<i class="fa fa-angle-right"></i>
+							<a href="#">AD, MS Exchange, SQL</a>
+						</li>
+						<li>
+							<i class="fa fa-angle-right"></i>
+							<a href="#">Microsoft Certified</a>
+						</li>
+						<li>
+							<i class="fa fa-angle-right"></i>
+							<a href="#">Maintenance Contracts</a>
+						</li>
+					</ul>
+				</div>
+				<div class="box box3">
+					<p>03</p>
+					<h2>
+						NATIONWIDE
+						<span>IT SERVICES</span>
+					</h2>
+					<div id="clear"></div>
+					<ul class="boxNav">
+						<li>
+							<i class="fa fa-angle-right"></i>
+							<a href="#">Nationwide IT Workforce</a>
+						</li>
+						<li>
+							<i class="fa fa-angle-right"></i>
+							<a href="#">OEM Hardware Installations</a>
+						</li>
+						<li>
+							<i class="fa fa-angle-right"></i>
+							<a href="#">IT Project Management</a>
+						</li>
+						<li>
+							<i class="fa fa-angle-right"></i>
+							<a href="#">Staff Augmentation</a>
+						</li>
+					</ul>
+				</div>
+			</article>
+			<article class="bottom">
+				<div class="box box1">
+					<i class="fa fa-refresh"></i>
+					<h2>
+						COMPUTER REPAIR
+						<br>
+						<span>DOLORE IPSUM</span>
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eveniet architecto odio magni aliquid libero temporibus repudiandae adipisci cum similique.
+					</p>
+					<a href="#">More info</a>
+					<i class="fa fa-angle-right"></i>
+				</div>
+				<div class="box box2">
+					<i class="fa fa-cogs"></i>
+					<h2>
+						OUR SERVICES
+						<br>
+						<span>DOLORE IPSUM</span>
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non officia perferendis velit laborum architecto eum sequi, possimus provident harum in.
+					</p>
+					<a href="#">More info</a>
+					<i class="fa fa-angle-right"></i>
+				</div>
+				<div class="box box3">
+					<i class="fa fa-phone"></i>
+					<h2>
+						OUR SUPPORT
+						<br>
+						<span>DOLORE IPSUM</span>
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sit excepturi temporibus, dicta ipsa, beatae. Culpa pariatur fuga distinctio possimus.
+					</p>
+					<a href="#">More info</a>
+					<i class="fa fa-angle-right"></i>
+				</div>
+			</article>
+		</section>
+		<footer>
+			<div class="location">
+				<i class="fa fa-map-marker"></i>
+				<p>
+					COMPUTER REPAIR 28 JACKSON BLVD STE 1020 CHICAGO, IL 60604-2340
+				</p>
+			</div>
+			<div class="phone">
+				<i class="fa fa-mobile"></i>
+				<p>TELEPHONE: +1 800 603 6035 E-MAIL: MAIL@DEMOLINK.ORG</p>
+			</div>
+			<div class="policy">
+				<p>
+					COMPUTER REPAIR
+					<span>© 2014 |</span>
+					<a href="#">Privacy Policy</a>
+				</p>
+				<div class="social">
+					<a href="#">
+						<i class="fa fa-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="fa fa-rss"></i>
+					</a>
+					<a href="#">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="fa fa-google-plus"></i>
+					</a>
+				</div>
+			</div>
+			<div id="clear"></div>
+		</footer>
+	</main>
+	<a href="#top">
+		<i class="fa fa-arrow-up"></i>
+	</a>
+</body>
+</html>

@@ -1,0 +1,842 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+#clear {
+  clear: both;
+}
+body {
+  background: url(../img/bg.gif);
+}
+main {
+  width: 1270px;
+  margin: 45px auto;
+  padding: 50px;
+  background: #fff;
+}
+main header {
+  width: 100%;
+}
+main header #top {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dcdcdc;
+}
+main header #top p {
+  float: left;
+}
+main header #top #options {
+  width: 295px;
+  float: right;
+}
+main header #top #options .check {
+  padding-right: 10px;
+  cursor: pointer;
+}
+main header #top #options .check .fa-shopping-cart {
+  padding-top: 5px;
+  padding-right: 5px;
+  float: left;
+}
+main header #top #options .check p {
+  font-size: 12px;
+  transition: all .3s;
+}
+main header #top #options .check p:hover > .fa-angle-down {
+  color: #ff4c86;
+}
+main header #top #options .check p .fa-angle-down {
+  font-size: 18px;
+  padding-left: 5px;
+  transition: all .3s;
+}
+main header #top #options .check p .fa-angle-down:hover {
+  color: #ff4c86;
+}
+main header #top #options .check p span {
+  padding-left: 5px;
+  font-size: 22px;
+  color: #dcdcdc;
+}
+main header #top #options .lang p {
+  font-size: 16px;
+  padding-left: 5px;
+  cursor: pointer;
+  transition: all .3s;
+}
+main header #top #options .lang p:hover > .fa-angle-down {
+  color: #ff4c86;
+}
+main header #top #options .lang p .fa-angle-down {
+  font-size: 18px;
+  padding-left: 5px;
+  cursor: pointer;
+  transition: all .3s;
+}
+main header #top #options .lang p .fa-angle-down:hover {
+  color: #ff4c86;
+}
+main header #top #options .lang p span {
+  padding-left: 5px;
+  font-size: 22px;
+  color: #dcdcdc;
+}
+main header #top #options .money p {
+  font-size: 16px;
+  padding-top: 3px;
+  padding-left: 5px;
+  cursor: pointer;
+  transition: all .3s;
+}
+main header #top #options .money p:hover > .fa-angle-down {
+  color: #ff4c86;
+}
+main header #top #options .money p .fa-angle-down {
+  font-size: 18px;
+  padding-left: 5px;
+  cursor: pointer;
+  transition: all .3s;
+}
+main header #top #options .money p .fa-angle-down:hover {
+  color: #ff4c86;
+}
+main header figure {
+  display: flex;
+  width: 100%;
+  margin: 20px auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dcdcdc;
+  justify-content: center;
+}
+main header #bottom {
+  width: 100%;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 60px;
+  border-bottom: 3px solid #dcdcdc;
+}
+main header #bottom nav {
+  float: left;
+}
+main header #bottom nav ul li {
+  float: left;
+  margin-right: 10px;
+  padding: 5px;
+  border-right: 2px solid #dcdcdc;
+}
+main header #bottom nav ul li a {
+  margin: 5px;
+  padding: 5px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #262626;
+  transition: color .3s;
+}
+main header #bottom nav ul li a:hover {
+  color: #ff4c86;
+}
+main header #bottom nav ul li a:first-child {
+  margin: 5px 5px 5px 0;
+  padding: 5px 5px 5px 0;
+}
+main header #bottom nav ul li:last-child {
+  border-right: 0;
+}
+main header #bottom form {
+  float: right;
+  margin-top: -8px;
+}
+main header #bottom form input[name="search"] {
+  padding: 10px;
+  border: 0;
+  border-bottom: 1px solid #dcdcdc;
+}
+main header #bottom form .fa-search {
+  padding: 10px;
+  font-size: 20px;
+  color: #262626;
+  cursor: pointer;
+  border-bottom: 3px solid #ff4c86;
+  transition: color .3s;
+}
+main header #bottom form .fa-search:hover {
+  color: #ff4c86;
+}
+main aside {
+  float: left;
+  width: 270px;
+}
+main aside .category h2 {
+  padding: 30px;
+  font-size: 20px;
+  font-height: normal;
+  font-weight: 100;
+  color: #262626;
+  border-bottom: 3px solid #dcdcdc;
+}
+main aside .category ul {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #dcdcdc;
+}
+main aside .category ul li {
+  padding: 10px;
+}
+main aside .category ul li a {
+  color: #262626;
+  transition: color .3s;
+}
+main aside .category ul li a:hover {
+  color: #ff4c86;
+}
+main aside .category ul li .active {
+  color: #ff5690;
+}
+main aside .category ul li .fa-angle-right {
+  padding-right: 10px;
+  font-size: 18px;
+  color: #aaaaaa;
+}
+main aside .sale h2 {
+  padding: 30px;
+  font-size: 20px;
+  font-height: normal;
+  font-weight: 100;
+  color: #262626;
+  border-bottom: 3px solid #dcdcdc;
+}
+main aside .sale figure {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+main aside .sale figure img {
+  width: 100%;
+}
+main aside .sale figure p {
+  width: 60%;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+main aside .sale figure span {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: line-through;
+  color: #969696;
+}
+main aside .sale figure span:nth-of-type(2) {
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ff4c86;
+}
+main aside .sale figure a {
+  float: right;
+  margin: -30px 20px;
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+  background: #aaaaaa;
+  transition: background-color 0.3s;
+}
+main aside .sale figure a:hover {
+  background: #ff4c86;
+}
+main aside .saleBanner {
+  position: relative;
+}
+main aside .saleBanner:hover > figure a img {
+  transform: scale(1.2);
+}
+main aside .saleBanner figure {
+  width: 100%;
+  overflow: hidden;
+}
+main aside .saleBanner figure a img {
+  transition: .3s;
+}
+main aside .saleBanner figure a img:hover {
+  transform: scale(1.2);
+}
+main aside .saleBanner .text {
+  position: absolute;
+  top: 0;
+}
+main aside .saleBanner .text p:first-child {
+  margin: 40px 40px 20px 40px;
+  padding: 20px 10px;
+  font-size: 42px;
+  color: #fff;
+  background: #FF3D54;
+  border-radius: 20px;
+}
+main aside .saleBanner .text p:nth-of-type(2) {
+  margin: 10px 40px;
+  font-size: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+main aside .saleBanner .text p:last-child {
+  margin: 20px 40px;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+main section {
+  float: right;
+  width: 870px;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+main section .slide {
+  border: 1px solid;
+  width: 100%;
+  height: 460px;
+}
+main section .slide .banner {
+  position: relative;
+  overflow: auto;
+  z-index: 100;
+}
+main section .slide .banner:hover > h2 {
+  color: #fff;
+  background: #FF3D54;
+}
+main section .slide .banner .prev {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  z-index: 1000;
+  transition: color .3s;
+}
+main section .slide .banner .prev:hover {
+  color: #ff4c86;
+}
+main section .slide .banner .next {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  z-index: 1000;
+  transition: color .3s;
+}
+main section .slide .banner .next:hover {
+  color: #ff4c86;
+}
+main section .slide .banner h2 {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  padding: 40px;
+  font-size: 60px;
+  color: #333;
+  background: #fff;
+  border-radius: 50%;
+  border: 0;
+  z-index: 1000;
+  transition: .3s;
+}
+main section .slide .banner h2:hover {
+  color: #fff;
+  background: #FF3D54;
+}
+main section .slide .banner ul li {
+  float: left;
+}
+main section .twoBlock {
+  margin-top: 10px;
+}
+main section .twoBlock .blockOne {
+  width: 435px;
+  height: 271px;
+  float: left;
+  position: relative;
+}
+main section .twoBlock .blockOne p {
+  font-size: 40px;
+  color: #262626;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+main section .twoBlock .blockOne a {
+  font-size: 20px;
+  padding: 10px 15px;
+  border: 1px solid #b4b4b4;
+  color: #b4b4b4;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  transition: color .3s;
+}
+main section .twoBlock .blockOne a:hover {
+  color: #ff4c86;
+}
+main section .twoBlock .blockTwo {
+  width: 435px;
+  height: 271px;
+  float: right;
+  position: relative;
+}
+main section .twoBlock .blockTwo p {
+  font-size: 40px;
+  color: #262626;
+  position: absolute;
+  top: 80px;
+  right: 50px;
+}
+main section .twoBlock .blockTwo a {
+  font-size: 20px;
+  padding: 10px 15px;
+  border: 1px solid #b4b4b4;
+  color: #b4b4b4;
+  position: absolute;
+  top: 130px;
+  right: 90px;
+  transition: color .3s;
+}
+main section .twoBlock .blockTwo a:hover {
+  color: #ff4c86;
+}
+main section h2 {
+  padding: 30px 5px;
+  font-size: 20px;
+  font-height: normal;
+  font-weight: 100;
+  color: #262626;
+  border-bottom: 3px solid #dcdcdc;
+}
+main section #box {
+  width: 870px;
+}
+main section #box .box {
+  border: 1px solid #dcdcdc;
+  width: 270px;
+  height: 300px;
+  margin: 15px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+main section #box .box img {
+  margin-left: 7%;
+}
+main section #box .box h3 {
+  padding: 50px 50px 10px;
+  background: #3de2c0;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+  transform: rotate(-45deg);
+  position: absolute;
+  top: -25px;
+  left: -60px;
+}
+main section #box .box p {
+  width: 60%;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+main section #box .box span {
+  padding-left: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ff4c86;
+  float: left;
+}
+main section #box .box .fa-shopping-cart {
+  font-size: 22px;
+  margin: -30px 20px;
+  padding: 10px;
+  color: #a0a0a0;
+  border: 1px solid;
+  float: right;
+  transition: all .3s;
+}
+main section #box .box .fa-shopping-cart:hover {
+  color: #fff;
+  background: #505050;
+}
+main section #box .box1,
+main section #box .box4 {
+  margin: 15px 15px 15px 0;
+}
+main section #box .box3,
+main section #box .box6 {
+  margin: 15px 0 15px 15px;
+}
+main #checkout h2 {
+  padding: 30px 5px;
+  font-size: 20px;
+  font-height: normal;
+  font-weight: 100;
+  color: #262626;
+  border-bottom: 3px solid #dcdcdc;
+}
+main #checkout p {
+  width: 60%;
+  padding-left: 5px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+main footer {
+  width: 1270px;
+  margin-left: -50px;
+  padding-left: 50px;
+  background: #F6F6F6;
+}
+main footer .top {
+  height: 450px;
+}
+main footer .top .cont {
+  width: 270px;
+  margin: 0 15px 0 0;
+  float: left;
+}
+main footer .top .cont h3 {
+  padding: 30px 5px;
+  font-size: 20px;
+  font-height: normal;
+  font-weight: 100;
+  color: #262626;
+  border-bottom: 2px solid #dcdcdc;
+}
+main footer .top .cont p {
+  padding: 30px 0 20px 5px;
+  font-size: 18px;
+  color: #787878;
+}
+main footer .top .cont p:nth-of-type(2) {
+  font-size: 22px;
+  color: #eb3872;
+}
+main footer .top .cont .fa-envelope {
+  padding: 0 10px;
+}
+main footer .top .cont a {
+  color: #262626;
+  transition: all .3s;
+}
+main footer .top .cont a:hover {
+  color: #ff4c86;
+}
+main footer .top .cont .socBlock {
+  width: 115px;
+  margin: 40px auto;
+}
+main footer .top .cont .socBlock .fa {
+  width: 30px;
+  height: 30px;
+  padding: 7px;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 50%;
+  transition: all .3s;
+}
+main footer .top .cont .socBlock .fa-twitter {
+  background: #9bc9d3;
+}
+main footer .top .cont .socBlock .fa-twitter:hover {
+  background: #AFDDE7;
+}
+main footer .top .cont .socBlock .fa-facebook {
+  background: #7b8db5;
+}
+main footer .top .cont .socBlock .fa-facebook:hover {
+  background: #8FA1C9;
+}
+main footer .top .cont .socBlock .fa-rss {
+  background: #e2c98e;
+}
+main footer .top .cont .socBlock .fa-rss:hover {
+  background: #F6DDA2;
+}
+main footer .whyBuy {
+  width: 270px;
+  margin: 0 15px 0 15px;
+  float: left;
+}
+main footer .whyBuy h3 {
+  padding: 30px 5px;
+  font-size: 20px;
+  font-height: normal;
+  font-weight: 100;
+  color: #262626;
+  border-bottom: 2px solid #dcdcdc;
+}
+main footer .whyBuy ul li {
+  line-height: 50px;
+}
+main footer .whyBuy ul li a {
+  color: #767676;
+  transition: .3s;
+}
+main footer .whyBuy ul li a:hover {
+  color: #ff4c86;
+}
+main footer .account {
+  width: 270px;
+  margin: 0 15px 0 15px;
+  float: left;
+}
+main footer .account h3 {
+  padding: 30px 5px;
+  font-size: 20px;
+  font-height: normal;
+  font-weight: 100;
+  color: #262626;
+  border-bottom: 2px solid #dcdcdc;
+}
+main footer .account ul li {
+  line-height: 50px;
+}
+main footer .account ul li a {
+  color: #767676;
+  transition: .3s;
+}
+main footer .account ul li a:hover {
+  color: #ff4c86;
+}
+main footer .inf {
+  width: 270px;
+  margin: 0 0 0 15px;
+  float: left;
+}
+main footer .inf h3 {
+  padding: 30px 5px;
+  font-size: 20px;
+  font-height: normal;
+  font-weight: 100;
+  color: #262626;
+  border-bottom: 2px solid #dcdcdc;
+}
+main footer .inf ul li {
+  line-height: 50px;
+}
+main footer .inf ul li a {
+  color: #767676;
+  transition: .3s;
+}
+main footer .inf ul li a:hover {
+  color: #ff4c86;
+}
+main .bottom {
+  height: 50px;
+}
+main .bottom p {
+  padding: 40px;
+  float: left;
+}
+main .bottom img {
+  margin: 20px;
+  float: right;
+}
+main #login {
+  margin-bottom: 20px;
+}
+main #login article {
+  width: 1170px;
+}
+main #login article h2 {
+  padding: 20px;
+  font-size: 20px;
+  color: #262626;
+  border-bottom: 3px solid #f0f0f0;
+}
+main #login article .left {
+  width: 550px;
+  height: 280px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  background: url(../img/bg-login.gif) 550px 280px;
+  border: 1px solid #dcdcdc;
+  float: left;
+}
+main #login article .left h3 {
+  padding: 20px 0;
+  font-size: 14px;
+  color: #ff4c86;
+  text-transform: uppercase;
+  border-bottom: 1px solid #f0f0f0;
+}
+main #login article .left p {
+  padding: 20px 0;
+  font-size: 14px;
+  color: #c8c8c8;
+  letter-spacing: 1px;
+}
+main #login article .left a {
+  margin-bottom: 40px;
+  padding: 10px;
+  font-size: 12px;
+  color: #fff;
+  background: #3a3a3a;
+  transition: .3s;
+}
+main #login article .left a:hover {
+  background: #ff4c86;
+}
+main #login article .right {
+  width: 550px;
+  height: 330px;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  background: url(../img/bg-login-2.gif) 530px 280px;
+  background-position: bottom right;
+  border: 1px solid #dcdcdc;
+  float: right;
+  position: relative;
+}
+main #login article .right h3 {
+  width: 548px;
+  margin-left: -20px;
+  padding: 20px 20px;
+  font-size: 14px;
+  color: #ff4c86;
+  background: #fff;
+  text-transform: uppercase;
+  border-bottom: 1px solid #f0f0f0;
+}
+main #login article .right form {
+  width: 550px;
+  height: 280px;
+}
+main #login article .right form p {
+  padding: 20px 0;
+  font-size: 14px;
+  color: #c8c8c8;
+  letter-spacing: 1px;
+}
+main #login article .right form label {
+  font-size: 14px;
+  font-weight: bold;
+}
+main #login article .right form label span {
+  color: Red;
+}
+main #login article .right form input {
+  width: 420px;
+  margin: 5px 0;
+  padding: 5px;
+  color: #dcdcdc;
+  border: inset 1px rgba(220, 220, 220, 0.5);
+}
+main #login article .right form input:focus {
+  color: #262626;
+}
+main #login article .right a {
+  margin: 40px 40px;
+  padding: 10px;
+  font-size: 12px;
+  color: #fff;
+  background: #3a3a3a;
+  transition: .3s;
+  position: absolute;
+  left: -20px;
+  bottom: 10px;
+}
+main #login article .right a:hover {
+  background: #ff4c86;
+}
+main #sales {
+  width: 870px;
+  float: right;
+}
+main #sales h2 {
+  padding: 20px;
+  font-size: 20px;
+  color: #262626;
+  border-bottom: 3px solid #f0f0f0;
+}
+main #sales .box {
+  width: 270px;
+  height: 400px;
+  padding: 20px;
+  border: 1px solid #dcdcdc;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+main #sales .box img {
+  margin-left: 7%;
+}
+main #sales .box a {
+  color: #aaaaaa;
+}
+main #sales .box a p {
+  width: 60%;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #aaaaaa;
+  transition: .3s;
+}
+main #sales .box a p:hover {
+  color: #ff4c86;
+}
+main #sales .box a p:nth-of-type(2) {
+  padding: 10px 0;
+  font-size: 12px;
+}
+main #sales .box a span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #262626;
+}
+main #sales .box .fa-shopping-cart {
+  font-size: 22px;
+  margin: -100px 0px;
+  padding: 10px;
+  color: #a0a0a0;
+  border: 1px solid;
+  float: right;
+  transition: all .3s;
+}
+main #sales .box .fa-shopping-cart:hover {
+  color: #fff;
+  background: #505050;
+}
+main #sales .box a {
+  font-size: 12px;
+  color: #262626;
+  transitoin: .3s;
+}
+main #sales .box a:hover {
+  color: #ff4c86;
+}
+main #sales .box1,
+main #sales .box4 {
+  margin: 30px 15px 0 0;
+}
+main #sales .box2,
+main #sales .box5 {
+  margin: 30px 15px 0 15px;
+}
+main #sales .box3,
+main #sales .box6 {
+  margin: 30px 0 0 15px;
+}
+main #sales .box6 {
+  margin-bottom: 60px;
+}
+main #sales .box3 .fa-shopping-cart {
+  margin-top: -125px;
+}
