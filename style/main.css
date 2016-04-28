@@ -294,6 +294,9 @@ header h2 {
   font-size: 12px;
   font-weight: normal;
 }
+.job .c_format {
+  margin-top: 10px;
+}
 .contacts {
   width: 100%;
   max-width: 1920px;
