@@ -295,7 +295,7 @@ header h2 {
   font-weight: normal;
 }
 .job .work:not(:nth-of-type(1)) {
-  margin-top: 10px;
+  margin-top: 50px;
 }
 .contacts {
   width: 100%;
