@@ -289,12 +289,12 @@ header h2 {
 .job .date_container {
   color: #aaa;
   position: absolute;
-  top: 103px;
+  top: 35px;
   right: 0;
   font-size: 12px;
   font-weight: normal;
 }
-.job .c_format {
+.job:not(:nth-of-type(1)) {
   margin-top: 10px;
 }
 .contacts {
