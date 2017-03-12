@@ -1,5 +1,5 @@
 $(function() {
 	$('.hover').hover(function(){
-		$('.subNav').slideToggle('fast');
+		$('.subNav').stop().slideToggle('fast');
 	});
 });
